@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" dir="Itr">
+
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="./style/pharm.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+<body>
+
+    <header>
+        <a href="#" class="brand">Mayo Clinic</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="./home page.html">Home Page</a>
+                <a href="./about us.html">About Us</a>
+                <a href="./doctors.html">Doctors</a>
+                <a href="./pharmacy.html">Pharmacy</a>
+                <a href="./service.html">Services</a>
+                <a href="./consulting and reservation.html">Consulting and Reservation</a>
+                <a href="./Order.html">Order</a>
+                <a href="./checkOut.html">CheckOut</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="home">
+        <video class="video-slide" src="images/health.mp4" autoplay muted loop></video>
+        <div class="content">
+            <h1><b>Transforming your care</b><br><span><b>Learn how we drive innovation ></b></span></h1>
+            <p><b>a set of principles defined by the Mayo brothers in the early years of Mayo Clinic. It is the guide for how we work together to deliver coordinated care across the continuum to our patients, through a multidisciplinary team approach to treating the whole patient.</b></p>
+            <a href="#">Request appointment</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        //Javascript of responsive navigation menu 
+        const menuBtn = document.querySelector(".menu-btn")
+
+        menuBtn.addEventListener("click",() => {
+            menuBtn.classList.toggle("active");
+        })
+    </script>
+
+<!--Introduction section-->
+<div class="container">
+    <div class="slidebar">
+        <ul>
+            <li><strong>Getting here</strong></li>
+            <hr>
+            <li><strong>Hotels and lodging</strong></li>
+            <hr>
+            <li><strong>Getting around</strong></li>
+            <hr>
+            <li><strong>Parking</strong></li>
+            <hr>
+            <li><strong>Campus buildings and maps  +</strong></li>
+            <hr>
+            <li><strong>Places to eat</strong></li>
+            <hr>
+            <li><strong>Concierge Services</strong></li>
+            <hr>
+            <li><strong>Reasources A-Z  - </strong></li>
+            <hr>
+
+            <ul>
+                <li><a href="#">Accessibility Services</a></li>
+                <li><a href="#">Computer access</a></li>
+                <li><a href="#">Interpreter service</a></li>
+                <li><a href="#">Pharmacy services</a></li>
+                <li><a href="#">Shops and Supplies</a></li>
+                <li><a href="#">Social work</a></li>
+                <li><a href="#">Spiritual and religious services</a></li>
+                <li><a href="#">Tours</a></li>
+            </ul>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Pharmacy services at Mayo Clinic in Kandy</h1>
+        <p>Mayo Clinic pharmacies are designed to take the stress out of getting the medicines
+             you need. Convenient outpatient pharmacies are located throughout the city of Kandy. 
+             Prescriptions from your Mayo Clinic care team can be filled at any of these pharmacies
+            </p>
+
+            <div class="service-section">
+                <h2>Mail Services</h2>
+                <p>077xxxxxxx</p>
+                <p>077xxxxxxx(toll-free)</p>
+                <p>7.30 a.m. to 6 p.m.</p>
+                <p>Central time,Monday through Friday</p>
+                <p>8 a.m. to noon</p>
+                <p>Central time, Saturday</p>
+                <p>Closed Sunday and holidays</p>
+                <p><a href="#">Find out more</a></p>
+            </div>
+
+            <div class="service-section">
+                <h2>Baldwin Building</h2>
+                <p>221 Fourth Ave. SW, Suite 1116</p>
+                <p>Kandy, MN 55902</p>
+                <p>507-284-8880</p>
+                <p>8 a.m. to 5 p.m.</p>
+                <p>Central time, Monday through Friday</p>
+                <p>8 a.m. to noon</p>
+                <p>Central time, Saturday</p>
+                <p>Closed Sunday and holidays</p>
+            </div>
+
+            <div class="service-section">
+                <h2>Mayo Clinic Hospital, Methodist Campus</h2>
+                <p>Eisenberg Building, Lobby Level</p>
+                <p>Kandy, MN 55902</p>
+                <p>800-588-2670 (toll-free)</p>
+                <p>7 a.m. to 8 p.m.</p>
+                <p>Central time, Monday through Friday</p>
+                <p>8 a.m. to noon</p>
+                <p>Central time, Saturday</p>
+                <p>*Closed 10:30 a.m. to 11 a.m.</p>
+            </div>
+        </div>
+    </div>
+<!--End-->
+
+<!--Paragraph-->
+<h1><i>Specialty Pharmacy</i></h1>
+<p>Mayo Clinic Specialty Pharmacy offers pharmacy services to
+     patients with certain chronic health conditions that require 
+     costly or complex long-term therapies.</p>
+
+<!--End Paragraph-->
+
+<!--Mayo clinic-pharmacy medicine purchase form-->
+<div class="container">
+    <h1>Mayo Clinic - Pharmacy Medicine Purchase Form</h1>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <!--Customer Information-->
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your Name.." required>
+
+            <label for="contactNumber">Contact Number:</label>
+            <input type="tel" id="contactNumber" name="contactNumber" placeholder="Enter your Contact Number.." required>
+
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your Email Address.." required>
+
+            <label for="deliveryAddress">Delivery Address</label>
+            <input type="text" id="deliveryAddress" name="deliveryAddress" placeholder="Enter your Full Address" required>
+
+            <label for="patientID">Patient ID (if applicable):</label>
+            <input type="text" id="patientID" name="patientID" placeholder="Enter your Mayo Clinic Patient ID">
+        </fieldset>
+        <!-- Medicine Category -->
+        <fieldset>
+            <legend>Medicine Category</legend>
+            <label for="medicineCategory">Medicine Category:</label>
+            <select id="medicineCategory" name="medicineCategory">
+                <option value="">Select Medicine Category</option>
+                <option value="prescription">Prescription Medicine</option>
+                <option value="otc">Over-the-Counter Medicine</option>
+            </select>
+
+            <label for="medicineList">Medicine List:</label>
+            <select id="medicineList" name="medicineList">
+                <option value="">Select Medicine</option>
+                <option value="https://www.mayoclinic.org/drugs-supplements/acetaminophen-oral-route-rectal-route/description/drg-20068480">Acetaminophen</option>
+                <option value="https://www.drugs.com/search.php?searchterm=levothyroxine">levothyroxine</option>
+                <option value="https://www.drugs.com/search.php?searchterm=Gemtesa">Gemtesa</option>
+                <option value="https://www.mayoclinic.org/drugs-supplements/ibuprofen-intravenous-route/description/drg-20073066">Ibuprofen</option>
+                <option value="https://www.mayoclinic.org/drugs-supplements/sitagliptin-oral-route/description/drg-20069730">Januvia</option>
+                <option value="https://www.mayoclinic.org/drugs-supplements/ibrutinib-oral-route/description/drg-20084873">Imbruvica</option>
+                <option value="">Methadone</option>
+                <option value="">Probuphine</option>
+                <option value="">More</option>
+                <!-- Add more medicine options as required -->
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="99" value="1" required>
+
+            <label for="prescriptionFile">Upload Prescription:</label>
+            <input type="file" id="prescriptionFile" name="prescriptionFile" required>
+        </fieldset>
+
+        <!-- Payment Information -->
+        <fieldset>
+            <legend>Payment Information</legend>
+            <label for="paymentMethod">Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod">
+                <option value="">Select Method</option>
+                <option value="credit">Credit Card</option>
+                <option value="debit">Debit Card</option>
+                <option value="insurance">Insurance</option>
+            </select>
+
+            <div class="card-details">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your card number">
+
+                <label for="expirationDate">Expiration Date:</label>
+                <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YY">
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
+            </div>
+
+            <div class="insurance-details">
+                <label for="insuranceProvider">Insurance Provider:</label>
+                <input type="text" id="insuranceProvider" name="insuranceProvider" placeholder="Enter your insurance provider">
+
+                <label for="policyNumber">Policy Number:</label>
+                <input type="text" id="policyNumber" name="policyNumber" placeholder="Enter your policy number">
+            </div>
+        </fieldset>
+
+        <!-- Delivery Information -->
+        <fieldset>
+            <legend>Delivery Information</legend>
+            <label for="deliveryDate">Preferred Delivery Date:</label>
+            <input type="date" id="deliveryDate" name="deliveryDate" required>
+
+            <label for="deliveryMethod">Delivery Method:</label>
+            <select id="deliveryMethod" name="deliveryMethod">
+                <option value="standard">Standard Delivery</option>
+                <option value="express">Express Delivery</option>
+            </select>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<!--End Mayo clinic-pharmacy medicine purchase form-->
+
+<!--Paragraph-->
+<h1><i>Cannaday Building and Davis Building</i></h1>
+
+<p>Contact information.</p>
+<p>Cannaday Building and Davis Building</p>
+    <p><a href="https://www.google.com/maps/place/Mayo+Clinic/@30.2640897,-81.4409507,17z/data=!3m2!4b1!5s0x88e44a10fb7e1567:0x40ddce416e555935!4m6!3m5!1s0x88e5ca0d9d4a9c93:0x283a45ab0117ea03!8m2!3d30.2640897!4d-81.4409507!16s%2Fm%2F04"> San Pablo Road</a></p>
+    <p><a href="https://www.google.com/maps/place/Mayo+Clinic/@30.2640897,-81.4409507,17z/data=!3m2!4b1!5s0x88e44a10fb7e1567:0x40ddce416e555935!4m6!3m5!1s0x88e5ca0d9d4a9c93:0x283a45ab0117ea03!8m2!3d30.2640897!4d-81.4409507!16s%2Fm%2F04">Jacksonville, FL 32224</a></p>
+    <p>Phone: 904-953-2000</p>
+
+<h1>Campus map</h1>
+<p>Download a printable map of Mayo Clinic's campus in Jacksonville, Florida</p>
+<p><a href="https://mcforms.mayo.edu/mc1600-mc1699/mc1663-59.pdf">Jacksonville campus map (PDF)</a></p>
+<!--End Paragraph-->
+
+<!--Highlight at a glance-->
+<h1>Highlight at a glance 👨‍⚕️</h1>
+<p>One of the largest and most comprehensive heart practices in the world, Mayo Clinic relies on the expertise of more than 240 subspecialized experts trained in congenital heart disease in adults and children, coronary artery disease, hypertrophic cardiomyopathy,
+     heart rhythm disorders, and heart valve diseases.</p>
+<!--End Highlight at a glance-->
+
+<!--Online Medicine-->
+<h2 style="text-align: center;">Online Medicine</h2>
+
+<div class="card">
+    <img src="images/diaz.jpg" alt="Diazepam" style="width: 100%;">
+    <h1>Diazepam</h1>
+    <p class="Price">$19.99</p>
+    <p>Diazepam is used to relieve symptoms of anxiety and alcohol withdrawal.
+         This medicine may also be used to treat certain seizure disorders and help
+          relax muscles or relieve muscle spasm.</p>
+          <p><button><a href="#">Add to Cart</a></button></p>
+</div>
+
+<div class="card">
+    <img src="images/halpo.jpg" alt="Halodic" style="width: 100%;">
+    <h1>Halodic</h1>
+    <p class="Price">$19.99</p>
+    <p>Halodoc is a provider of an online teleconsultation platform for multiple health 
+        disorders. The platform allows users to connect with general physicians and specialists 
+        for their treatments. It enables users to order medications for multiple diseases.</p>
+        <p><button><a href="#">Add to Cart</a></button></p>
+</div>
+
+<div class="card">
+    <img src="images/panaci.jpg" alt="Paracetamol" style="width: 100%;">
+    <h1>Paracetamol</h1>
+    <p class="Price">$19.99</p>
+    <p>Paracetamol is a medicine used to treat mild to moderate pain.</p>
+    <p><button><a href="#">Add to Cart</a></button></p>
+</div>
+
+<div class="card">
+    <img src="images/cam.webp" alt="carbamazepine" style="width: 100%;">
+    <h1>carbamazepine</h1>
+    <p class="Price">$19.99</p>
+    <p>Carbamazepine is used to manage and treat epilepsy, trigeminal neuralgia, and acute manic
+         and mixed episodes in bipolar I disorder. Indications for epilepsy are specifically for partial
+          seizures with complex symptomatology (psychomotor, temporal lobe), generalized tonic seizures (grand mal),
+           and mixed seizure patterns.</p>
+          <p><button><a href="#">Add to Cart</a></button></p>
+</div>
+<!-- Add more medicine as required -->
+<!--End Online Medicine-->
+
+<!--Footer-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <div class="footer-buttons">
+                <button>🩺 Find a doctor</button>
+                <button>💼 Explore careers</button>
+                <button>📬 Sign up for free e-newsletters</button>
+            </div>
+            <div class="footer-links">
+                <h4>About Mayo Clinic</h4>
+                <ul>
+                    <li><a href="#">About this site</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Health Information Policy</a></li>
+                    <li><a href="#">Medicare Accountable Care Organization (ACO)</a></li>
+                    <li><a href="#">Media Requests</a></li>
+                    <li><a href="#">News Network</a></li>
+                    <li><a href="#">Price Transparency</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Medical Professionals</h4>
+            <ul>
+                <li><a href="#">Ask Mayo Experts</a></li>
+                <li><a href="#">Clinical Trials</a></li>
+                <li><a href="#">Mayo Clinic Alumni Association</a></li>
+                <li><a href="#">Refer a Patient</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Businesses</h4>
+            <ul>
+                <li><a href="#">Executive Health Program</a></li>
+                <li><a href="#">International Business Collaborations</a></li>
+                <li><a href="#">Facilities & Real Estate</a></li>
+                <li><a href="#">Supplier Information</a></li>
+            </ul>
+            <h4>Students</h4>
+            <ul>
+                <li><a href="#">Admissions Requirements</a></li>
+                <li><a href="#">Degree Programs</a></li>
+                <li><a href="#">Student & Faculty Portal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Researchers</h4>
+            <ul>
+                <li><a href="#">Research Faculty</a></li>
+                <li><a href="#">Laboratories</a></li>
+            </ul>
+
+            <h4>International Patients</h4>
+            <ul>
+                <li><a href="#">Appointments</a></li>
+                <li><a href="#">Financial Services</a></li>
+                <li><a href="#">International Locations & Offices</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Charitable Care & Financial Assistance</h4>
+            <ul>
+                <li><a href="#">Community Health Needs Assessment</a></li>
+                <li><a href="#">Financial Assistance Documents - Arizona</a></li>
+                <li><a href="#">Financial Assistance Documents - Florida</a></li>
+                <li><a href="#">Financial Assistance Documents - Minnesota</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="social-media">
+            <p>Follow Mayo Clinic</p>
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><img src="images/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/mayoclinic/?hl=en"><img src="images/insta.png" alt="Instagram"></a>
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><img src="images/messen.png" alt="Messenger"></a>
+            <a href="https://x.com/MayoClinic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/twit.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/company/mayo-clinic/"><img src="images/linkdin.png" alt="linkdin"></a>
+        </div>
+        <div class="app-buttons">
+            <p>Get the Mayo Clinic app</p>
+            <a href="#"><img src="images/google play.png" alt="Google Play"></a>
+            <a href="#"><img src="images/app store.png" alt="App Store"></a>
+        </div>
+    </div>
+</footer>
+
+<!--Footer Ends-->
+
+
+
+
+
+
+<script src="./website.js"></script>
+</body>
+</html>

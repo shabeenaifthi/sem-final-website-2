@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="Itr">
+
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="./style/home.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+     <!--Emoji bullets-->
+     <style>
+        ul.custom-emoji-bullets{
+        list-style-type: none;
+        padding-left: 0;
+    }
+    ul.custom-emoji-bullets li::before{
+        margin-right: 8px;
+    }
+    .Stethoscope::before{
+        content: "🩺";
+    }
+    .X-Ray::before{
+        content: "🩻";
+    }
+    .Microbe::before{
+        content: "🦠";
+    }
+
+     </style>
+
+
+     <!--Emoji Bullets end-->
+
+<!--text in images-->
+<style>
+    .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+.image-container .text{
+    position: top;
+    top: 20px;
+    left: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(53, 53, 53);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+</style>
+<!--End-->
+
+</head>
+
+
+<body>
+
+    <header>
+        <a href="#" class="brand">Mayo Clinic</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="./home page.html">Home Page</a>
+                <a href="./about us.html">About Us</a>
+                <a href="./doctors.html">Doctors</a>
+                <a href="./pharmacy.html">Pharmacy</a>
+                <a href="./service.html">Services</a>
+                <a href="./consulting and reservation.html">Consulting and Reservation</a>
+                <a href="./Order.html">Order</a>
+                <a href="./checkOut.html">CheckOut</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="home">
+        <video class="video-slide" src="images/health.mp4" autoplay muted loop></video>
+        <div class="content">
+            <h1><b>Transforming your care</b><br><span><b>Learn how we drive innovation ></b></span></h1>
+            <p><b>a set of principles defined by the Mayo brothers in the early years of Mayo Clinic. It is the guide for how we work together to deliver coordinated care across the continuum to our patients, through a multidisciplinary team approach to treating the whole patient.</b></p>
+            <a href="#">Request appointment</a>
+        </div>
+        <div class="media-icons">
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/mayoclinic/?hl=en"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://x.com/MayoClinic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        //Javascript of responsive navigation menu 
+        const menuBtn = document.querySelector(".menu-btn")
+
+        menuBtn.addEventListener("click",() => {
+            menuBtn.classList.toggle("active");
+        })
+    </script>
+<!--END NAVBAR-->
+
+<!--Introduction Section-->
+<section class="intro">
+    <h2>Welcome to Mayo Clinic</h2>
+    <p>Mayo Clinic originated with the medical practice of William Worrall Mayo, M.D., (1819–1911). Born near Manchester, England, he was mentored by the eminent British scientist John Dalton and immigrated to the United States in 1846.</p>
+    <p>Today, “Mayo Clinic” is internationally recognized as the name of the integrated, coordinated private group medical practice founded by the famous Mayo brothers, Drs. William James and Charles Horace, in Rochester, Minnesota</p>
+    </section>
+<!--Introduction End-->
+
+<!--search Section-->
+<section class="search-section">
+    <div class="search-container">
+        <input type="text" placeholder="Search diseases & conditions....">
+        <button>Search</button>
+    </div>
+</section>
+<!--end Search section-->
+</div>
+
+
+<!--Content Section-->
+<section class="content-section">
+    <div class="content">
+        <h2>Healing Starts Here</h2>
+        <p>The right answers the first time Effective treatment depends on getting the right diagnosis. Our experts diagnose and treat the toughest medical challenges.</p>
+        <p>Top-ranked in the U.S.Mayo Clinic has more No. 1 rankings than any other hospital in the nation according to U.S. News & World Report. <a href="#">Learn more about our top-ranked specialties.</a></p>
+        <button>Why Choose City Hospital</button>
+    </div>
+    <div class="image">
+        <img src="images/healing.jpeg" alt="Healing Image" width="70%">
+    </div>
+</section>
+
+<section class="content-section">
+    <div class="content">
+        <h2>World-Class Care for Global Patients</h2>
+        <p>We make it easy for patients around the world to get care from Mayo Clinic.</p>
+        <ul class="custom-emoji-bullets">
+            <li class="Stethoscope">Comprehensive medical services</li>
+            <li class="X-Ray">State-of-the-art facilities</li>
+            <li class="Microbe">24/7 emergency care</li>
+        </ul>
+        <button>International Service</button>
+    </div>
+    <div class="image">
+        <img src="images/we.jpeg" width="450" height="490" alt="Global Patients Image" width="40%">
+    </div>
+</section>
+
+<section class="content-section">
+    <div class="content">
+        <h2>Featured Care Areas</h2>
+        <p>We solve the world's most serious and complex medical challenges.</p>
+        <ol>
+            <li><b>Cardiology</b></li>
+            <li><b>Oncology</b></li>
+            <li><b>Neurology</b></li>
+            <li><b>Pediatrics</b></li>
+            <li><b>Orthopedics</b></li>
+        </ol>
+    </div>
+</section>
+
+<!--Footer-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <div class="footer-buttons">
+                <button>🩺 Find a doctor</button>
+                <button>💼 Explore careers</button>
+                <button>📬 Sign up for free e-newsletters</button>
+            </div>
+            <div class="footer-links">
+                <h4>About Mayo Clinic</h4>
+                <ul>
+                    <li><a href="#">About this site</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Health Information Policy</a></li>
+                    <li><a href="#">Medicare Accountable Care Organization (ACO)</a></li>
+                    <li><a href="#">Media Requests</a></li>
+                    <li><a href="#">News Network</a></li>
+                    <li><a href="#">Price Transparency</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Medical Professionals</h4>
+            <ul>
+                <li><a href="#">Ask Mayo Experts</a></li>
+                <li><a href="#">Clinical Trials</a></li>
+                <li><a href="#">Mayo Clinic Alumni Association</a></li>
+                <li><a href="#">Refer a Patient</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Businesses</h4>
+            <ul>
+                <li><a href="#">Executive Health Program</a></li>
+                <li><a href="#">International Business Collaborations</a></li>
+                <li><a href="#">Facilities & Real Estate</a></li>
+                <li><a href="#">Supplier Information</a></li>
+            </ul>
+            <h4>Students</h4>
+            <ul>
+                <li><a href="#">Admissions Requirements</a></li>
+                <li><a href="#">Degree Programs</a></li>
+                <li><a href="#">Student & Faculty Portal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Researchers</h4>
+            <ul>
+                <li><a href="#">Research Faculty</a></li>
+                <li><a href="#">Laboratories</a></li>
+            </ul>
+
+            <h4>International Patients</h4>
+            <ul>
+                <li><a href="#">Appointments</a></li>
+                <li><a href="#">Financial Services</a></li>
+                <li><a href="#">International Locations & Offices</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Charitable Care & Financial Assistance</h4>
+            <ul>
+                <li><a href="#">Community Health Needs Assessment</a></li>
+                <li><a href="#">Financial Assistance Documents - Arizona</a></li>
+                <li><a href="#">Financial Assistance Documents - Florida</a></li>
+                <li><a href="#">Financial Assistance Documents - Minnesota</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="social-media">
+            <p>Follow Mayo Clinic</p>
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><img src="images/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/mayoclinic/?hl=en"><img src="images/insta.png" alt="Instagram"></a>
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><img src="images/messen.png" alt="Messenger"></a>
+            <a href="https://x.com/MayoClinic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/twit.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/company/mayo-clinic/"><img src="images/linkdin.png" alt="linkdin"></a>
+        </div>
+        <div class="app-buttons">
+            <p>Get the Mayo Clinic app</p>
+            <a href="#"><img src="images/google play.png" alt="Google Play"></a>
+            <a href="#"><img src="images/app store.png" alt="App Store"></a>
+        </div>
+    </div>
+</footer>
+
+<!--Footer Ends-->
+
+
+
+
+
+
+
+<script src="./website.js"></script>
+</body>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" dir="Itr">
+
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="./style/about.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+<body>
+
+    <header>
+        <a href="#" class="brand">Mayo Clinic</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="./home page.html">Home Page</a>
+                <a href="./about us.html">About Us</a>
+                <a href="./doctors.html">Doctors</a>
+                <a href="./pharmacy.html">Pharmacy</a>
+                <a href="./service.html">Services</a>
+                <a href="./consulting and reservation.html">Consulting and Reservation</a>
+                <a href="./Order.html">Order</a>
+                <a href="./checkOut.html">CheckOut</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="home">
+        <video class="video-slide" src="images/health.mp4" autoplay muted loop></video>
+        <div class="content">
+            <h1><b>Transforming your care</b><br><span><b>Learn how we drive innovation ></b></span></h1>
+            <p><b>a set of principles defined by the Mayo brothers in the early years of Mayo Clinic. It is the guide for how we work together to deliver coordinated care across the continuum to our patients, through a multidisciplinary team approach to treating the whole patient.</b></p>
+            <a href="#">Request appointment</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        //Javascript of responsive navigation menu 
+        const menuBtn = document.querySelector(".menu-btn")
+
+        menuBtn.addEventListener("click",() => {
+            menuBtn.classList.toggle("active");
+        })
+    </script>
+
+    <!--Text-->
+<div class="breadcrumb">
+    <a href="./home page.html">Home</a> &gt;
+    <a href="./about us.html">About Mayo Clinic</a>
+</div>
+
+<section class="intro">
+    <h2>About Mayo Clinic</h2>
+    <h1>Solving the world's toughest<br>medical problems</h1>
+    <p class="highlight">— <span class="highlighted-text">One Person at a time</span></p>
+</section>
+<!--End Text-->
+
+
+<!--slider images-->
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="images/marurice.jpg" alt="Marurice" style="width: 50%;">
+            <div class="container">
+                <h2>Marurice Orenga</h2>
+                <p>Taekwondo grandmaster Maurice Orange gets a second chance after
+                     a motorcycle crash.</p>
+                     <p><button class="button"><a href="https://mayomagazine.mayoclinic.org/2024/02/taekwondo-talent-finds-second-chance-at-mayo-clinic/"> Marurice's story</a></button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="images/veronica.avif" alt="Veronica" style="width: 44%;">
+            <div class="container">
+                <h2>Veronica Ciudad</h2>
+                <p>A groundbreaking virtual care program allowed Salvadoran mom Veronica
+                     Ciudad-Real to recover at home after a bone marrow transplant.</p>
+                     <p><button class="button"><a href="https://cancerblog.mayoclinic.org/2022/07/21/transplant-new-model-of-care-give-hope-to-salvadoran-mom-after-cancer-diagnosis/"> Veronica's story</a></button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="images/yasmin.webp" alt="Yasmin" style="width: 79%;">
+            <div class="container">
+                <h2>Yasmin Mullings</h2>
+                <p>  Long distance runner, Yasmin Mullings, was back in her running shoes
+                     following a heart transplant. We are sad to share that since this story
+                      was shared, Yasmin has passed away</p>
+                      <p><button class="button">Yasmin's story</button></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--End Slide Images-->
+
+
+<!--More details about Mayo Clinic-->
+<div class="container">
+    <div class="image-section">
+        <img src="images/trans.jpg" alt="Doctors at work" style="width: 140%;">
+    </div>
+    <div class="text-section">
+        <h2>Who we are</h2>
+        <h1>Transforming health care</h1>
+        <p>Mayo Clinic is the largest integrated, not-for-profit medical group 
+            practice in the world. We're building the future, one where the best possible
+             care is available to everyone — and more people can heal at home. Our relentless 
+             research turns into earlier diagnoses and new cures. That's how we inspire hope in those who need it most.</p>
+        <h3><b>Innovating for new solution</b></h3>
+        <p>At Mayo Clinic, experts work together to solve the most challenging unmet needs of patients. Our <a href="#">history of innovation</a>
+             dates back almost 150 years, when brothers Will and Charlie Mayo pioneered an integrated, team-based approach to medicine. Today, that trailblazing spirit drives innovations like<a href="#">Mayo Clinic Platform</a>
+              — which powers new technologies to change how care is delivered to all.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="image-section">
+        <img src="images/a3.jpeg" alt="Doctors at work" style="width: 130%;">
+    </div>
+    <div class="text-section">
+        <h2>Our Impact</h2>
+        <h1>Building a healthier world</h1>
+        <p>We think big and act boldly to improve the health of communities and accelerate equality and diversity in health care. We share our knowledge
+             globally, impact policy, and partner with others to create lasting — and much-needed — change for a healthier world</p>
+        <h3><b>Improving health equity</b></h3>
+        <p>We partner with community organizations to end health disparities through education programs, personalized health care, and community-engaged 
+            research. We're accelerating recruitment of diverse investigators and clinical trial participants to eliminate bias in medicine and science and
+             ensure more cures for all. We're strengthening our diversity and inclusion pipelines for health care professionals and leadership development. 
+             We're also using our platform to make innovative care accessible for all. And we're just getting started.</p>
+             <p><button class="button">Explore our community enggement</button></p>
+    </div>
+</div>
+<hr>
+
+<!--end-->
+
+<!--images-->
+<div class="container">
+    <!--start section-->
+    <div class="stats">
+        <div class="stat">
+            <h1>$100M</h1>
+            <p>$100 million over the next 10 years to eliminate racism and advance equity and inclusion within Mayo Clinic — and to improve health equity.</p>
+        </div>
+        <div class="stat">
+            <h1>50%</h1>
+            <p>50% reduction in greenhouse gas emissions and 20% reduction in energy within 10 years as part of our commitment to the Better Climate Challenge.</p>
+        </div>
+    </div>
+
+<!--Images section-->
+    <div class="images">
+        <div class="images-container">
+            <img src="images/a2.jpeg" alt="Health equity focus" style="width: 80%;">
+        </div>
+        <div class="images-container">
+            <img src="images/a1.jpeg" alt="Climate change challenges" style="width: 80%;">
+        </div>
+    </div>
+</div>
+<hr>
+<!--End-->
+
+<!--Dtails-->
+<div class="container">
+    <div class="image-section">
+        <img src="images/a4.jpeg" alt="Doctors at work" style="width: 100%;">
+    </div>
+    <div class="text-section">
+        <h2>People and Culture</h2>
+        <h1>People who make the difference</h1>
+        <p>Everyone at Mayo Clinic is on a mission to provide compassionate, world-class care to 
+            each person, in every connection. That includes 1.3 million patients from over 130 countries 
+            who visit Mayo Clinic campuses each year. We also train future health leaders who share our drive 
+            to transform health care.Mayo Clinic is a nonprofit organization committed to clinical practice, education, 
+            and research, providing whole-person care to everyone who needs healing. Here, experts solve the biggest health 
+            care challenges together. Behind our top rankings, you'll find a diverse, inclusive culture of teamwork, excellence,
+             mutual respect, and dedication to putting patients first.</p>
+             <p><button class="button">Explore careers at Mayo Clinic</button></p>
+    </div>
+</div>
+<hr>
+<!--End-->
+
+<!--Text-->
+<p style="font-size: 38px;"><i>"A diverse staff makes every single aspect of our organization better. At Mayo Clinic, we work to create the right environment for 
+    our staff to thrive, feel valued, enjoy their work, and provide an unparalleled patient experience."</i></p>
+
+    <address style="font-size: 25px;">
+        <b>Gianrico Farrugia, M.D.</b><br>
+        president & CEO, Mayo Clinic<br>
+    </address>
+    <hr>
+<!--End-->
+
+<!--Table-->
+<h2>Doctor Availability and Payment Details</h2>
+
+<table>
+    <tr>
+        <th>Doctor Names</th>
+        <th>available Times</th>
+        <th>Consultation Fee</th>
+    </tr>
+    <tr>
+        <td>Dr.John Smith</td>
+        <td>Mon-Fri, 9AM - 5PM</td>
+        <td>$150</td>
+    </tr>
+    <tr>
+        <td>Dr.Emily Smith</td>
+        <td>Tue-Thu, 10AM - 4PM</td>
+        <td>$200</td>
+    </tr>
+    <tr>
+        <td>Dr.Michael Lee</td>
+        <td>Mon,Wed,Fri 8AM - 3PM</td>
+        <td>$175</td>
+    </tr>
+    <tr>
+        <td>Dr.Sarah Johnson</td>
+        <td>Mon-Fri, 11AM - 6PM</td>
+        <td>$160</td>
+    </tr>
+    <tr>
+        <td>Dr.Laura White</td>
+        <td>Tue-Fri, 9AM - 2PM</td>
+        <td>$190</td>
+    </tr>
+</table>
+<p><button class="button">More</button></p>
+<hr>
+<!--End Table-->
+
+<!--Branches of Mayo Clinic-->
+<h1><i>Branches of Mayo Clinic</i></h1>
+<p>Mayo Clinic is a nonprofit hospital system with campuses in Galle, Matara, Kandy, 
+    Ragama, Hambanthota and IDH Collection Center. Mayo Clinic employs 76,000 people, including
+     more than 7,300 physicians and clinical residents and over 66,000 allied health staff, as of 2022.</p>
+     <button class="button">More</button>
+
+
+<h2><b>Our Laboratories</b></h2>
+<div class="container">
+    <img src="images/lo1.jpg" alt="Location1" style="width: 40%;">
+    <div class="content">
+        <h1>Galle Laboratory</h1>
+        <p>The most technologically advanced hospital in the south of
+             Sri Lanka, we're equipped to handle a range of diagnostic, general 
+             and surgical care services.</p>
+    </div>
+</div>
+
+<div class="container">
+    <img src="images/lo2.jpg" alt="Location1" style="width: 40%;">
+    <div class="content">
+        <h1>Hambanthota Laboratory</h1>
+        <p>The most technologically advanced hospital in the south of
+             Sri Lanka, we're equipped to handle a range of diagnostic, general 
+             and surgical care services.</p>
+    </div>
+</div>
+
+<div class="container">
+    <img src="images/lo3.jpg" alt="Location1" style="width: 40%;">
+    <div class="content">
+        <h1>Ragama Laboratory</h1>
+        <p>The most technologically advanced hospital in the south of
+             Sri Lanka, we're equipped to handle a range of diagnostic, general 
+             and surgical care services.</p>
+    </div>
+</div>
+
+<div class="container">
+    <img src="images/lo4.jpg" alt="Location1" style="width: 70%;">
+    <div class="content">
+        <h1>kandy Laboratory</h1>
+        <p>The most technologically advanced hospital in the south of
+             Sri Lanka, we're equipped to handle a range of diagnostic, general 
+             and surgical care services.</p>
+    </div>
+</div>
+<!--if needed add more branches-->
+
+<section class="discover-section">
+    <h1>Discover more about Mayo Clinic</h1>
+
+    <div class="card-container">
+        <div class="info-card">
+            <div class="icon">
+                <img src="images/location.png" alt="Location Icon">
+            </div>
+            <h3>Locations</h3>
+            <p>Campuses in Minnesota, Arizona, and Florida, a network of regional clinics and hospitals, and international locations</p>
+        </div>
+
+        <div class="info-card">
+            <div class="icon">
+                <img src="images/gov.png" alt="Governance Icon" style="width: 40%;">
+            </div>
+            <h3>Governance and board of trustees</h3>
+            <p>Overseeing our charitable, clinical, scientific, and educational mission</p>
+        </div>
+
+        <div class="info-card">
+            <div class="icon">
+                <img src="images/medicare.png" alt="Medicare ACO Icon" style="width: 40%;">
+            </div>
+            <h3>Medicare Accountable Care Organization (ACO)</h3>
+            <p>Public reporting information for our participation as a Medicare ACO</p>
+        </div>
+
+        <div class="info-card">
+            <div class="icon">
+                <img src="images/volen.png" alt="Volunteers Icon" style="width: 40%;">
+            </div>
+            <h3>Volunteers</h3>
+            <p>Helping us provide the best care to every patient</p>
+        </div>
+
+        <div class="info-card">
+            <div class="icon">
+                <img src="images/network.png" alt="Mayo Clinic Care Network Icon" style="width: 50%;">
+            </div>
+            <h3>Mayo Clinic Care Network</h3>
+            <p>Expertise and resources for member medical organizations</p>
+        </div>
+
+        <div class="info-card">
+            <div class="icon">
+                <img src="images/mission.png" alt="Mission and Values Icon" style="width: 30%;">
+            </div>
+            <h3>Mission and values</h3>
+            <p>Mayo Clinic is committed to providing whole-person care to everyone who needs healing.</p>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <div class="footer-buttons">
+                <button>🩺 Find a doctor</button>
+                <button>💼 Explore careers</button>
+                <button>📬 Sign up for free e-newsletters</button>
+            </div>
+            <div class="footer-links">
+                <h4>About Mayo Clinic</h4>
+                <ul>
+                    <li><a href="#">About this site</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Health Information Policy</a></li>
+                    <li><a href="#">Medicare Accountable Care Organization (ACO)</a></li>
+                    <li><a href="#">Media Requests</a></li>
+                    <li><a href="#">News Network</a></li>
+                    <li><a href="#">Price Transparency</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Medical Professionals</h4>
+            <ul>
+                <li><a href="#">Ask Mayo Experts</a></li>
+                <li><a href="#">Clinical Trials</a></li>
+                <li><a href="#">Mayo Clinic Alumni Association</a></li>
+                <li><a href="#">Refer a Patient</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Businesses</h4>
+            <ul>
+                <li><a href="#">Executive Health Program</a></li>
+                <li><a href="#">International Business Collaborations</a></li>
+                <li><a href="#">Facilities & Real Estate</a></li>
+                <li><a href="#">Supplier Information</a></li>
+            </ul>
+            <h4>Students</h4>
+            <ul>
+                <li><a href="#">Admissions Requirements</a></li>
+                <li><a href="#">Degree Programs</a></li>
+                <li><a href="#">Student & Faculty Portal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Researchers</h4>
+            <ul>
+                <li><a href="#">Research Faculty</a></li>
+                <li><a href="#">Laboratories</a></li>
+            </ul>
+
+            <h4>International Patients</h4>
+            <ul>
+                <li><a href="#">Appointments</a></li>
+                <li><a href="#">Financial Services</a></li>
+                <li><a href="#">International Locations & Offices</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Charitable Care & Financial Assistance</h4>
+            <ul>
+                <li><a href="#">Community Health Needs Assessment</a></li>
+                <li><a href="#">Financial Assistance Documents - Arizona</a></li>
+                <li><a href="#">Financial Assistance Documents - Florida</a></li>
+                <li><a href="#">Financial Assistance Documents - Minnesota</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="social-media">
+            <p>Follow Mayo Clinic</p>
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><img src="images/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/mayoclinic/?hl=en"><img src="images/insta.png" alt="Instagram"></a>
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><img src="images/messen.png" alt="Messenger"></a>
+            <a href="https://x.com/MayoClinic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/twit.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/company/mayo-clinic/"><img src="images/linkdin.png" alt="linkdin"></a>
+        </div>
+        <div class="app-buttons">
+            <p>Get the Mayo Clinic app</p>
+            <a href="#"><img src="images/google play.png" alt="Google Play"></a>
+            <a href="#"><img src="images/app store.png" alt="App Store"></a>
+        </div>
+    </div>
+</footer>
+
+<!--Footer Ends-->
+
+
+
+
+
+
+<script src="./website.js"></script>
+</body>
+</html>

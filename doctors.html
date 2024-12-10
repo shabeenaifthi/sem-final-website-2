@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" dir="Itr">
+
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="./style/doc.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+<body>
+
+    <header>
+        <a href="#" class="brand">Mayo Clinic</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="./home page.html">Home Page</a>
+                <a href="./about us.html">About Us</a>
+                <a href="./doctors.html">Doctors</a>
+                <a href="./pharmacy.html">Pharmacy</a>
+                <a href="./service.html">Services</a>
+                <a href="./consulting and reservation.html">Consulting and Reservation</a>
+                <a href="./Order.html">Order</a>
+                <a href="./checkOut.html">CheckOut</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="home">
+        <video class="video-slide" src="images/health.mp4" autoplay muted loop></video>
+        <div class="content">
+            <h1><b>Transforming your care</b><br><span><b>Learn how we drive innovation ></b></span></h1>
+            <p><b>a set of principles defined by the Mayo brothers in the early years of Mayo Clinic. It is the guide for how we work together to deliver coordinated care across the continuum to our patients, through a multidisciplinary team approach to treating the whole patient.</b></p>
+            <a href="#">Request appointment</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        //Javascript of responsive navigation menu 
+        const menuBtn = document.querySelector(".menu-btn")
+
+        menuBtn.addEventListener("click",() => {
+            menuBtn.classList.toggle("active");
+        })
+    </script>
+
+<!--Paragraph-->
+<h1><i>Doctors and Medicial Stuff</i></h1>
+<p>Mayo Clinic Specialty Pharmacy offers pharmacy services to
+     patients with certain chronic health conditions that require 
+     costly or complex long-term therapies.</p>
+
+<!--End Paragraph-->
+
+<!--Find a doctor-->
+<div class="container">
+    <div class="header">
+        <h2>Medical Departments & Centers</h2>
+        <h1>Doctors and Medical Staff</h1>
+    </div>
+
+    <div class="search-section">
+        <h2>Find a doctor</h2>
+        <div class="search-box">
+            <input type="text" placeholder="DOCTOR'S NAME, CONDITION OR PROCEDURE">
+            <select>
+                <option>Kandy</option>
+                <option>Galle</option>
+                <option>Ragama</option>
+                <option>Hambanthota</option>
+            </select>
+            <button>search</button>
+        </div>
+        <a href="#" class="search-tips">Search Tips</a>
+    </div>
+</div>
+<!--End-->
+
+<!--more details-->
+<div class="container">
+    <!--Left side: Browse by last name-->
+    <div class="Browse">
+        <h3><span class="icon">👁️</span>Browse by last name</h3>
+        <div class="alphabet">
+            <a href="#">A</a>
+            <a href="#">B</a>
+            <a href="#">C</a>
+            <a href="#">D</a>
+            <a href="#">E</a>
+            <a href="#">F</a>
+            <a href="#">G</a>
+            <a href="#">H</a>
+            <a href="#">I</a>
+            <a href="#">J</a>
+            <a href="#">K</a>
+            <a href="#">L</a>
+            <a href="#">M</a>
+            <a href="#">N</a>
+            <a href="#">O</a>
+            <a href="#">P</a>
+            <a href="#">Q</a>
+            <a href="#">R</a>
+            <a href="#">S</a>
+            <a href="#">T</a>
+            <a href="#">U</a>
+            <a href="#">V</a>
+            <a href="#">W</a>
+            <a href="#">X</a>
+            <a href="#">Y</a>
+            <a href="#">Z</a>
+        </div>
+    </div>
+
+    <!--Right side: Information text blocks-->
+    <div class="info-section">
+        <div class="info-block">
+            <h4>Mayo Clinic Health System Providers</h4>
+            <p>Mayo Clinic Health System is a family of clinics, hospitals, and other
+                 healthcare facilities with locations in 39 communities in Minnesota and
+                 Wisconsin. Our providers bring the knowledge and expertise of Mayo Clinic 
+                  to these communities and many surrounding areas to ensure our patients receive 
+                  world-class health care close to home. Patients have access to a full spectrum of
+                   health care options — with over 100 medical and surgical services and specialties
+                    available throughout the system.</p>
+            <a href="#">Find a Mayo Clinic Health System provider</a>
+        </div>
+
+        <div class="info-block">
+            <h4>Diseases & Conditions Treated</h4>
+            <p>Scan a comprehensive list of diseases and conditions seen at Mayo Clinic and find doctors
+                 who treat them.</p>
+            <a href="#">Review comprehensive condition guides</a>
+        </div>
+
+        <div class="info-block">
+            <h4>Primary Care in Kandy and Galle</h4>
+            <p>Our primary care providers have expertise in Family Medicine, Internal Medicine and Pediatric
+                 and Adolescent Medicine. Services include: preventive exams and screenings, well-child exams,
+                  pregnancy and behavioral health care, as well as management of chronic conditions and treatment 
+                  of minor illnesses.</p>
+            <a href="#">Search for a care team member</a>
+        </div>
+
+        <div class="info-block">
+            <h4>Medical Departments & Centers</h4>
+            <p>Review a list of all Mayo Clinic medical departments, specialty clinics, programs, centers and 
+                treatment services.</p>
+            <a href="#">See the departments and centers list</a>
+        </div>
+    </div>
+</div>
+<!--End-->
+
+<!--mOre info-->
+<p><b><i>MAYO CLINIC - KANDY (100)</i></b> </p> 
+<div class="search-container">
+    <div class="left-section">
+        <div class="search-item">
+            <div class="icon-text">
+                <img src="images/avali.png" alt="Available Icon" style="width: 20%;">
+                <span>available</span>
+                <span class="help-icon">?</span>
+            </div>
+        </div>
+        <div class="search-item">
+            <div class="icon-text">
+                <img src="images/hospital.png" alt="Hospital Icon" style="width: 10%;">
+                <span>Asiri Hospital - Kandy</span>
+                <select>
+                    <option>Any Location</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-section">
+        <div class="search-item">
+            <div class="icon-text">
+                <img src="https://img.icons8.com/material-outlined/24/000000/stethoscope.png" alt="Specialization Icon">
+                <span>Any Specialization</span>
+                <select>
+                    <option>Any Specialization</option>
+                </select>
+            </div>
+        </div>
+        <div class="search-item">
+            <div class="icon-text">
+                <img src="https://img.icons8.com/material-outlined/24/000000/calendar--v1.png" alt="Date Icon">
+                <span>Any Date</span>
+                <button class="search-button"><img src="https://img.icons8.com/ios-glyphs/18/ffffff/search.png"/> search</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End-->
+
+<!--Highlight at a glance-->
+<h1>Highlight at a glance 👨‍⚕️</h1>
+<p>One of the largest and most comprehensive heart practices in the world, Mayo Clinic relies on the expertise of more than 240 subspecialized experts trained in congenital heart disease in adults and children, coronary artery disease, hypertrophic cardiomyopathy,
+     heart rhythm disorders, and heart valve diseases.</p>
+<!--End Highlight at a glance-->
+
+<!--chart-->
+<div class="container">
+    <div class="header-section">
+        <h1>Mayo Clinic researchers are driving discovery and cures</h1>
+        <p>Mayo Clinic’s funding for discovery through research exceeded $1 billion in 2022.</p>
+    </div>
+
+    <div class="statistics-section">
+        <div class="stats-left">
+            <div class="circle-chart">
+                <div class="circle-text">
+                    <h2>5,000</h2>
+                    <p>Research Personnel</p>
+                </div>
+                <div class="circle-label">
+                    <p><strong>798</strong> Physicians involved in research</p>
+                    <p><strong>297</strong> Career scientific faculty</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-right">
+            <img src="images/re.jpg" alt="Research Image">
+        </div>
+    </div>
+
+    <div class="info-section">
+        <div class="info-block">
+            <h3>10,600+</h3>
+            <p>Research advancements reported in peer-reviewed publications</p>
+        </div>
+        <div class="info-block">
+            <h3>2,501</h3>
+            <p>Active clinical trials</p>
+        </div>
+        <div class="info-block">
+            <h3>1,511</h3>
+            <p>Clinical trials open for enrollment</p>
+        </div>
+    </div>
+
+    <div class="image-section">
+        <img src="images/micro.jpg" alt="Microscope Image">
+    </div>
+
+    <div class="info-section">
+        <div class="info-block">
+            <h3>12,161</h3>
+            <p>Patients accrued to clinical trials</p>
+        </div>
+        <div class="info-block">
+            <h3>3</h3>
+            <p>Pilot programs offering patients access to clinical trials at home</p>
+        </div>
+    </div>
+</div>
+<!--End chart-->
+
+<!--Doctors Potfolio-->
+<div class="profile-container">
+
+
+    <!--Doctor 01-->
+    <div class="profile-card">
+        <img src="images/doctor1.jpg" alt="doctor Image" class="profile-image">
+        <h3>Dr.Jane Doe, M.D. - AUDIO AVALILABLE</h3>
+        <P><b>Specialization:</b>Cardiology</P>
+        <p><b>Description:</b>a medical specialty that focuses on diagnosing and treating 
+            diseases and issues affecting the heart and blood vessels, or cardiovascular system</p>
+        <p><i class="fa fa-map-marker"></i>Eau Claire, Menomonie</p>
+        <button class="profile-button">profile</button>
+    </div>
+
+    <!--Doctor 02-->
+    <div class="profile-card">
+        <img src="images/doctor5.jpg" alt="doctor Image" class="profile-image">
+        <h3>Dr.John Smith, M.D. - AUDIO AVALILABLE</h3>
+        <P><b>Specialization:</b>Neurology</P>
+        <p><b>Description:</b>a medical field that studies and treats disorders of the nervous system,
+             which includes the brain, spinal cord, and peripheral nerves.</p>
+        <p><i class="fa fa-map-marker"></i>Eau Claire, Menomonie</p>
+        <button class="profile-button">profile</button>
+    </div>
+
+    <!--Doctor 03-->
+    <div class="profile-card">
+        <img src="images/doctor2.jpg" alt="doctor Image" class="profile-image">
+        <h3>Dr.Emily Johnson, M.D. - AUDIO AVALILABLE</h3>
+        <P><b>Specialization:</b>Pediatrics</P>
+        <p><b>Description:</b>the branch of medicine dealing with the health and medical care of infants, 
+            children, and adolescents from birth up to the age of 18.</p>
+        <p><i class="fa fa-map-marker"></i>Eau Claire, Menomonie</p>
+        <button class="profile-button">profile</button>
+    </div>
+
+    <!--Doctor 04-->
+    <div class="profile-card">
+        <img src="images/doctor3.jpg" alt="doctor Image" class="profile-image">
+        <h3>Dr.Michael Reyes, M.D. - AUDIO AVALILABLE</h3>
+        <P><b>Specialization:</b>Othopedic Surgery</P>
+        <p><b>Description:</b>a procedure on your musculoskeletal system. It can diagnose, treat, repair and 
+            prevent conditions that affect your bones, muscles and joints. Common types of orthopaedic surgery 
+            are ACL surgery and knee replacement surgery.</p>
+        <p><i class="fa fa-map-marker"></i>Eau Claire, Menomonie</p>
+        <button class="profile-button">profile</button>
+    </div>
+
+    <!--Doctor 05-->
+    <div class="profile-card">
+        <img src="images/doctor8.jpg" alt="doctor Image" class="profile-image">
+        <h3>Dr.Aisha Patel, M.D. - AUDIO AVALILABLE</h3>
+        <P><b>Specialization:</b>Endocrinology</P>
+        <p><b>Description:</b>the study of hormones and endocrine glands and organs, and the branch of medicine 
+            that treats hormone-related diseases.</p>
+        <p><i class="fa fa-map-marker"></i>Eau Claire, Menomonie</p>
+        <button class="profile-button">profile</button>
+    </div>
+
+    <!--Doctor 06-->
+    <div class="profile-card">
+        <img src="images/doctor9.jpg" alt="doctor Image" class="profile-image">
+        <h3>Dr.David Chan, M.D. - AUDIO AVALILABLE</h3>
+        <P><b>Specialization:</b>Neurosurgery</P>
+        <p><b>Description:</b>a medical specialty that involves diagnosing and treating conditions that affect the 
+            nervous system, including the brain, spinal cord, and nerves.</p>
+        <p><i class="fa fa-map-marker"></i>Eau Claire, Menomonie</p>
+        <button class="profile-button">profile</button>
+    </div>
+
+    <!--Doctor 06-->
+    <div class="profile-card">
+        <img src="images/jessica-alstead-pac.jpg" alt="doctor Image" class="profile-image">
+        <h3>Dr.Jessica Alstead, M.D. - AUDIO AVALILABLE</h3>
+        <P><b>Specialization:</b>Urgent Care</P>
+        <p><b>Description:</b>a medical specialty that involves diagnosing and treating conditions that affect the 
+            nervous system, including the brain, spinal cord, and nerves.</p>
+        <p><i class="fa fa-map-marker"></i>Eau Claire, Menomonie</p>
+        <button class="profile-button">profile</button>
+    </div>
+
+    
+    <!--add more doctors you needed-->
+</div>
+
+<!--end-->
+
+<!--Mayo Clinic doctors-->
+<p>potential treatments for cancer, memory disorders and other high-incidence diseases in minority populations. Researchers
+    also conduct clinical trials to determine the safety and effectiveness of new therapies. Clinical trials have led to new 
+    or improved treatments for many conditions.</p>
+<!--End-->
+
+<!--Footer-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <div class="footer-buttons">
+                <button>🩺 Find a doctor</button>
+                <button>💼 Explore careers</button>
+                <button>📬 Sign up for free e-newsletters</button>
+            </div>
+            <div class="footer-links">
+                <h4>About Mayo Clinic</h4>
+                <ul>
+                    <li><a href="#">About this site</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Health Information Policy</a></li>
+                    <li><a href="#">Medicare Accountable Care Organization (ACO)</a></li>
+                    <li><a href="#">Media Requests</a></li>
+                    <li><a href="#">News Network</a></li>
+                    <li><a href="#">Price Transparency</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Medical Professionals</h4>
+            <ul>
+                <li><a href="#">Ask Mayo Experts</a></li>
+                <li><a href="#">Clinical Trials</a></li>
+                <li><a href="#">Mayo Clinic Alumni Association</a></li>
+                <li><a href="#">Refer a Patient</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Businesses</h4>
+            <ul>
+                <li><a href="#">Executive Health Program</a></li>
+                <li><a href="#">International Business Collaborations</a></li>
+                <li><a href="#">Facilities & Real Estate</a></li>
+                <li><a href="#">Supplier Information</a></li>
+            </ul>
+            <h4>Students</h4>
+            <ul>
+                <li><a href="#">Admissions Requirements</a></li>
+                <li><a href="#">Degree Programs</a></li>
+                <li><a href="#">Student & Faculty Portal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Researchers</h4>
+            <ul>
+                <li><a href="#">Research Faculty</a></li>
+                <li><a href="#">Laboratories</a></li>
+            </ul>
+
+            <h4>International Patients</h4>
+            <ul>
+                <li><a href="#">Appointments</a></li>
+                <li><a href="#">Financial Services</a></li>
+                <li><a href="#">International Locations & Offices</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Charitable Care & Financial Assistance</h4>
+            <ul>
+                <li><a href="#">Community Health Needs Assessment</a></li>
+                <li><a href="#">Financial Assistance Documents - Arizona</a></li>
+                <li><a href="#">Financial Assistance Documents - Florida</a></li>
+                <li><a href="#">Financial Assistance Documents - Minnesota</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="social-media">
+            <p>Follow Mayo Clinic</p>
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><img src="images/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/mayoclinic/?hl=en"><img src="images/insta.png" alt="Instagram"></a>
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><img src="images/messen.png" alt="Messenger"></a>
+            <a href="https://x.com/MayoClinic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/twit.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/company/mayo-clinic/"><img src="images/linkdin.png" alt="linkdin"></a>
+        </div>
+        <div class="app-buttons">
+            <p>Get the Mayo Clinic app</p>
+            <a href="#"><img src="images/google play.png" alt="Google Play"></a>
+            <a href="#"><img src="images/app store.png" alt="App Store"></a>
+        </div>
+    </div>
+</footer>
+
+<!--Footer Ends-->
+
+
+
+
+
+<script src="./website.js"></script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="Itr">
+
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="./style/serv.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+<body>
+
+    <header>
+        <a href="#" class="brand">Mayo Clinic</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="./home page.html">Home Page</a>
+                <a href="./about us.html">About Us</a>
+                <a href="./doctors.html">Doctors</a>
+                <a href="./pharmacy.html">Pharmacy</a>
+                <a href="./service.html">Services</a>
+                <a href="./consulting and reservation.html">Consulting and Reservation</a>
+                <a href="./Order.html">Order</a>
+                <a href="./checkOut.html">CheckOut</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="home">
+        <video class="video-slide" src="images/health.mp4" autoplay muted loop></video>
+        <div class="content">
+            <h1><b>Transforming your care</b><br><span><b>Learn how we drive innovation ></b></span></h1>
+            <p><b>a set of principles defined by the Mayo brothers in the early years of Mayo Clinic. It is the guide for how we work together to deliver coordinated care across the continuum to our patients, through a multidisciplinary team approach to treating the whole patient.</b></p>
+            <a href="#">Request appointment</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        //Javascript of responsive navigation menu 
+        const menuBtn = document.querySelector(".menu-btn")
+
+        menuBtn.addEventListener("click",() => {
+            menuBtn.classList.toggle("active");
+        })
+    </script>
+
+<!--Introduction Section-->
+
+<section class="intro">
+    <h2>Mayo Clinic Services</h2>
+    <p>Mayo Clinic offers many minority health and wellness programs, including programs about cancer prevention, healthy brain aging, community outreach, community-engaged research and others. Mayo Clinic also sponsors programs to promote diversity.</p>
+    <p>Explore current offerings in detail below.</p>
+    <p><a href="#"><b>Cancer prevention — "Live Well. Be Well."</b></a></p>
+    <p><a href="#"><b>Prenatal education</b></a></p>
+    <p><a href="#"><b>Healthy brain aging — "Live Well. Think Well"</b></a></p>
+    <button><b>More About Us</b></button>
+    </section>
+<!--End Introduction Section-->
+
+<!--Icons-->
+<section class="service-icons">
+    <div class="service">
+        <div class="icon">
+            <img src="images/cancer.png" alt="Cancer Care">
+        </div>
+        <a href="#">Cancer Care</a>
+    </div>
+
+    <div class="service">
+        <div class="icon">
+            <img src="images/eme.png" alt="Emergencies">
+        </div>
+        <a href="#">Emergencies</a>
+    </div>
+
+    <div class="service">
+        <div class="icon">
+            <img src="images/birth.png" alt="Birthing Care">
+        </div>
+        <a href="#">Birthing Care</a>
+    </div>
+
+    <div class="service">
+        <div class="icon">
+            <img src="images/heart.png" alt="Heart Care">
+        </div>
+        <a href="#">Heart Care</a>
+    </div>
+</section>
+
+<!--Responsive Image Gallery Section-->
+<h2>Our Services</h2>
+<div class="Responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/cancer pic.jpg">
+            <img src="images/cancer pic.jpg" alt="Blood Cancer & Bone Marrow Transplant Center"
+             width="300"  height="300">
+        </a>
+        <div class="desc">Bone Marrow Transplant Center</div>
+        <button><b>More Information</b></button>
+    </div>
+</div>
+
+<div class="Responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/invert pic.jpg">
+            <img src="images/invert pic.jpg" alt="Interventional Radiology"
+            width="150"  height="150">
+        </a>
+        <div class="desc">Interventional Radiology</div>
+        <button><b>More Information</b></button>
+    </div>
+</div>
+
+<div class="Responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/brain.avif">
+            <img src="images/brain.avif"  alt="Brain and Spine Center"
+            width="300"   height="300">
+        </a> 
+        <div class="desc">Brain and Spain Center</div>
+        <button><b>More Information</b></button>
+    </div>
+</div>
+
+<div class="Responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/acc.avif">
+            <img src="images/acc.avif"  alt="Emergency and Accident"
+            width="300"  height="300">
+        </a>
+        <div class="desc">Emergency and Accident</div>
+        <button><b>More Information</b></button>
+    </div>
+</div>
+<hr>
+
+<div class="Responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/ambulance.avif">
+            <img src="images/ambulance.avif"  alt="Ambulance Service"
+            width="300"  height="300">
+        </a>
+        <div class="desc">Ambulance Service</div>
+        <button><b>More Information</b></button>
+    </div>
+</div>
+
+<div class="Responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/ecg.avif">
+            <img src="images/ecg.avif"  alt="Electrocardiogram (ECG)"
+            width="300"  height="300">
+        </a>
+        <div class="desc">Electrocardiogram (ECG)</div>
+        <button><b>More Information</b></button>
+    </div>
+</div>
+
+<div class="Responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/lab.avif">
+            <img src="images/lab.avif"  alt="Laboratory"
+            width="300"  height="300">
+        </a>
+        <div class="desc">Laboratory</div>
+        <button><b>More Information</b></button>
+    </div>
+</div>
+
+<div class="Responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/pharmacy.avif">
+            <img src="images/pharmacy.avif"  alt="Pharmacy"
+            width="300"  height="300">
+        </a>
+        <div class="desc">Pharmacy</div>
+        <button><a href="#"><b>More Information</b></a></button>
+    </div>
+</div>
+<hr>
+<!--End Responsive Image Gallery Section-->
+
+<!--Facilities & Amenities-->
+
+<h2>Facilities & Amenities</h2>
+<div class="Responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/parking.avif">
+            <img src="images/parking.avif" alt="parking"
+             width="300"  height="300">
+        </a>
+        <div class="desc">Parking</div>
+        <button><b>More Information</b></button>
+    </div>
+</div>
+
+<div class="Responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/wifi.avif">
+            <img src="images/wifi.avif" alt="parking"
+             width="300"  height="300">
+        </a>
+        <div class="desc">Free Wi-Fi</div>
+        <button><b>More Information</b></button>
+    </div>
+</div>
+
+<div class="Responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/food.jpg">
+            <img src="images/food.jpg" alt="food court"
+             width="300"  height="300">
+        </a>
+        <div class="desc">Food court</div>
+        <button><b>More Information</b></button>
+    </div>
+</div>
+
+<div class="Responsive">
+    <div class="gallery">
+        <a target="_blank" href="images/food.jpg">
+            <img src="images/food.jpg" alt="Hotel Accommodations"
+             width="300"  height="300">
+        </a>
+        <div class="desc">Hotel Accommodations</div>
+        <button><b>More Information</b></button>
+    </div>
+</div>
+<hr>
+
+
+<!--End-->
+
+<!--services details-->
+<h1>Our treatment and Services</h1>
+<p>Mayo Clinic is regularly acknowledged among the very 
+    best in the nation in the following specialties: Cancer. 
+    Cardiology and heart surgery. Diabetes and endocrinology.
+<a href="#"><b>Patient Registration Page</b></a></p>
+<!--End details-->
+
+<!--Our Laboratories-->
+<h2><b>Our Laboratories</b></h2>
+<div class="container">
+    <img src="images/lo1.jpg" alt="Location1" style="width: 20%;">
+    <div class="content">
+        <h1>Galle Laboratory</h1>
+        <p>The most technologically advanced hospital in the south of
+             Sri Lanka, we're equipped to handle a range of diagnostic, general 
+             and surgical care services.</p>
+    </div>
+</div>
+
+<div class="container">
+    <img src="images/lo2.jpg" alt="Location1" style="width: 20%;">
+    <div class="content">
+        <h1>Hambanthota Laboratory</h1>
+        <p>The most technologically advanced hospital in the south of
+             Sri Lanka, we're equipped to handle a range of diagnostic, general 
+             and surgical care services.</p>
+    </div>
+</div>
+
+<div class="container">
+    <img src="images/lo3.jpg" alt="Location1" style="width: 20%;">
+    <div class="content">
+        <h1>Ragama Laboratory</h1>
+        <p>The most technologically advanced hospital in the south of
+             Sri Lanka, we're equipped to handle a range of diagnostic, general 
+             and surgical care services.</p>
+    </div>
+</div>
+
+<div class="container">
+    <img src="images/lo4.jpg" alt="Location1" style="width: 20%;">
+    <div class="content">
+        <h1>kandy Laboratory</h1>
+        <p>The most technologically advanced hospital in the south of
+             Sri Lanka, we're equipped to handle a range of diagnostic, general 
+             and surgical care services.</p>
+    </div>
+</div>
+<!--if needed add more branches-->
+
+<!--Mayo Clinic Network-->
+<h1>Mayo Clinic Network</h1>
+<p>The Mayo Clinic Care Network is a group of independent healthcare providers that work 
+    together to improve healthcare and solve medical challenges. The network includes members 
+    from over 45 hospitals around the world, including:</p>
+    <p>Altru Health System, North Dakota</p>
+       <p>AIG Hospitals, India</p>
+       <p> American Hospital Dubai, United Arab Emirates</p>
+       <p> ASU Health Services, Arizona State University</p>
+        <p>Augusta Health, Virginia</p>
+
+        <h2>The network offers members</h2>
+        <p>Access to Mayo Clinic's knowledge, expertise, and resources </p>
+        <p>Virtual and in-person events, including conferences, symposiums, and webinars </p>
+        <p>Access to Mayo Clinic Laboratories</p>
+<!--End details-->
+
+
+
+
+
+
+
+
+
+<!--Footer-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <div class="footer-buttons">
+                <button>🩺 Find a doctor</button>
+                <button>💼 Explore careers</button>
+                <button>📬 Sign up for free e-newsletters</button>
+            </div>
+            <div class="footer-links">
+                <h4>About Mayo Clinic</h4>
+                <ul>
+                    <li><a href="#">About this site</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Health Information Policy</a></li>
+                    <li><a href="#">Medicare Accountable Care Organization (ACO)</a></li>
+                    <li><a href="#">Media Requests</a></li>
+                    <li><a href="#">News Network</a></li>
+                    <li><a href="#">Price Transparency</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Medical Professionals</h4>
+            <ul>
+                <li><a href="#">Ask Mayo Experts</a></li>
+                <li><a href="#">Clinical Trials</a></li>
+                <li><a href="#">Mayo Clinic Alumni Association</a></li>
+                <li><a href="#">Refer a Patient</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Businesses</h4>
+            <ul>
+                <li><a href="#">Executive Health Program</a></li>
+                <li><a href="#">International Business Collaborations</a></li>
+                <li><a href="#">Facilities & Real Estate</a></li>
+                <li><a href="#">Supplier Information</a></li>
+            </ul>
+            <h4>Students</h4>
+            <ul>
+                <li><a href="#">Admissions Requirements</a></li>
+                <li><a href="#">Degree Programs</a></li>
+                <li><a href="#">Student & Faculty Portal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Researchers</h4>
+            <ul>
+                <li><a href="#">Research Faculty</a></li>
+                <li><a href="#">Laboratories</a></li>
+            </ul>
+
+            <h4>International Patients</h4>
+            <ul>
+                <li><a href="#">Appointments</a></li>
+                <li><a href="#">Financial Services</a></li>
+                <li><a href="#">International Locations & Offices</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Charitable Care & Financial Assistance</h4>
+            <ul>
+                <li><a href="#">Community Health Needs Assessment</a></li>
+                <li><a href="#">Financial Assistance Documents - Arizona</a></li>
+                <li><a href="#">Financial Assistance Documents - Florida</a></li>
+                <li><a href="#">Financial Assistance Documents - Minnesota</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="social-media">
+            <p>Follow Mayo Clinic</p>
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><img src="images/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/mayoclinic/?hl=en"><img src="images/insta.png" alt="Instagram"></a>
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><img src="images/messen.png" alt="Messenger"></a>
+            <a href="https://x.com/MayoClinic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/twit.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/company/mayo-clinic/"><img src="images/linkdin.png" alt="linkdin"></a>
+        </div>
+        <div class="app-buttons">
+            <p>Get the Mayo Clinic app</p>
+            <a href="#"><img src="images/google play.png" alt="Google Play"></a>
+            <a href="#"><img src="images/app store.png" alt="App Store"></a>
+        </div>
+    </div>
+</footer>
+
+<!--Footer Ends-->
+
+
+
+
+<script src="./website.js"></script>
+</body>
+</html>

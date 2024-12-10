@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" dir="Itr">
+
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="./style/consul.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+<body>
+
+    <header>
+        <a href="#" class="brand">Mayo Clinic</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="./home page.html">Home Page</a>
+                <a href="./about us.html">About Us</a>
+                <a href="./doctors.html">Doctors</a>
+                <a href="./pharmacy.html">Pharmacy</a>
+                <a href="./service.html">Services</a>
+                <a href="./consulting and reservation.html">Consulting and Reservation</a>
+                <a href="./Order.html">Order</a>
+                <a href="./checkOut.html">CheckOut</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="home">
+        <video class="video-slide" src="images/health.mp4" autoplay muted loop></video>
+        <div class="content">
+            <h1><b>Transforming your care</b><br><span><b>Learn how we drive innovation ></b></span></h1>
+            <p><b>a set of principles defined by the Mayo brothers in the early years of Mayo Clinic. It is the guide for how we work together to deliver coordinated care across the continuum to our patients, through a multidisciplinary team approach to treating the whole patient.</b></p>
+            <a href="#">Request appointment</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        //Javascript of responsive navigation menu 
+        const menuBtn = document.querySelector(".menu-btn")
+
+        menuBtn.addEventListener("click",() => {
+            menuBtn.classList.toggle("active");
+        })
+    </script>
+
+<!--Introduction section-->
+<div class="container">
+    <div class="slidebar">
+        <ul>
+            <li><strong>Getting here</strong></li>
+            <hr>
+            <li><strong>Hotels and lodging</strong></li>
+            <hr>
+            <li><strong>Getting around</strong></li>
+            <hr>
+            <li><strong>Parking</strong></li>
+            <hr>
+            <li><strong>Campus buildings and maps  +</strong></li>
+            <hr>
+            <li><strong>Places to eat</strong></li>
+            <hr>
+            <li><strong>Concierge Services</strong></li>
+            <hr>
+            <li><strong>Reasources A-Z  - </strong></li>
+            <hr>
+
+            <ul>
+                <li><a href="#">Accessibility Services</a></li>
+                <li><a href="#">Computer access</a></li>
+                <li><a href="#">Interpreter service</a></li>
+                <li><a href="#">Pharmacy services</a></li>
+                <li><a href="#">Shops and Supplies</a></li>
+                <li><a href="#">Social work</a></li>
+                <li><a href="#">Spiritual and religious services</a></li>
+                <li><a href="#">Tours</a></li>
+            </ul>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Contact Mayo Clinic</h1>
+        <p>Addresses and phone numbers</p>
+        <p><a href="#">Kandy</a></p>
+        <p><a href="#">Galle</a></p>
+        <p><a href="#">Ragama</a></p>
+        <p><a href="#">Hambanthota</a></p>
+
+            <div class="service-section">
+                <h2>Appointment Office - 480-301-8484</h2>
+                <p>Insurance and billing - 844-217-9591 (toll-free)507-266-0909 for international callers</p>
+                <p>International Patients Center - 480-301-7101</p>
+                <p>Medical records and imaging requests - 	507-284-4594</p>
+                <p>Medical records requests fax - 507-284-0161</p>
+                <p>Scottsdale/Phoenix Office of Patient Experience - 	844-544-0036 (toll-free)</p>
+            </div>
+
+            <div class="service-section">
+                <h2>Baldwin Building</h2>
+                <p>General number - 904-953-2000</p>
+                <p>Appointment Office - 904-953-0853</p>
+                <p>Appointment Office fax - 904-953-2898</p>
+                <p>Billing - 844-217-9591 (toll-free)</p>
+                <p>Hospital-to-hospital patient transfers (Admission Transfer Center — 24 hours a day) - 904-953-1111</p>
+                <p>Insurance - 904-953-1395 or</p>
+                <p>International Services - 904-953-7000</p>
+                <p>International Services fax - 904-953-7329</p>
+            </div>
+
+            <div class="service-section">
+                <h2>Mayo Clinic Hospital, Methodist Campus</h2>
+                <p>Eisenberg Building, Lobby Level</p>
+                <p>Kandy, MN 55902</p>
+                <p>800-588-2670 (toll-free)</p>
+                <p>7 a.m. to 8 p.m.</p>
+                <p>Central time, Monday through Friday</p>
+                <p>8 a.m. to noon</p>
+                <p>Central time, Saturday</p>
+                <p>*Closed 10:30 a.m. to 11 a.m.</p>
+            </div>
+        </div>
+    </div>
+<!--End-->
+
+<!--Introduction Section-->
+
+<section class="intro">
+    <h2>Mayo Clinic Contact Us</h2>
+    <p>Mayo Clinic offers many minority health and wellness programs, including programs about cancer prevention, healthy brain aging, community outreach, community-engaged research and others. Mayo Clinic also sponsors programs to promote diversity.</p>
+    <p>Mayo Clinic Office of Patient Experience</p>
+       <p>Phone:844-544-0036(toll-free)</p>
+        <p><a href="#">Email:opx@mayo.edu.</a></p>
+        <p><a href="#">Mayo Clinic Office of Patient Experience. 200 1st St. SW. Rochester, MN 55905.</a></p>
+    </section>
+<!--End Introduction Section-->
+
+<!--Doctor Consultation Reservation Form-->
+
+<div class="container">
+    <h1>Mayo Clinic - Doctor Consultation Reservation Form</h1>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <!--Patient Information-->
+        <fieldset>
+            <legend>Patient Information</legend>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your Name.." required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" placeholder="MM/DD/YYYY" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">female</option>
+                <option value="nonbinary">Non-binary</option>
+                <option value="other">Other</option>
+                <option value="prefer-not-say">Prefer not to say</option>
+            </select>
+            
+            <label for="contactNumber">contact Number</label>
+            <input type="text" id="contactNumber" name="contactNumber" placeholder="Enter your Contact Number" required>
+
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your Email Address">
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your Address">
+        </fieldset>
+
+        <!--Consultation Details-->
+        <fieldset>
+
+            <legend>Consultation Details</legend>
+            <label for="predferredconsultaionDate">Preferred Consultation Date:</label>
+            <input type="date" id="predferredconsultaionDate" name="predferredconsultaionDate" placeholder="Select a Date">
+
+            <label for="preferredTime">Preferred Time:</label>
+            <input type="time" id="preferredTime" name="preferredTime" placeholder="Select a time">
+
+            <label for="doctorSpecialty">Doctor Specialty:</label>
+            <select id="doctorSpecialty" name="doctorSpecialty">
+                <option value="" disabled selected>Choose a Specialty</option>
+                <option value="General Practitioner (GP)">General Practitioner (GP)</option>
+                <option value="Cardiologist">Cardiologist</option>
+                <option value="Dermatologist">Dermatologist</option>
+                <option value="Neurologist">Neurologist</option>
+                <option value="Pediatrician">Pediatrician</option>
+            </select>
+
+            <label for="doctorpreference">Doctor Preference:</label>
+            <select id="doctorpreference" name="doctorpreference">
+                <option value="" disabled selected>If you have a specific doctor in mind, enter their name</option>
+                <option value="No preference">No preference</option>
+                <option value="Female Doctor">Female Doctor</option>
+                <option value="Male Doctor">Male Doctor</option>
+                <option value="Nearest Available Doctor">Nearest Available Doctor</option>
+                <option value="Specific Doctor by Name">Specific Doctor by Name</option>
+            </select>
+
+            <label for="reasonforConsultation">Reasons for Consultation:</label>
+            <select id="reasonforConsultation" name="reasonforConsultation">
+                <option value="" disabled selected>Briefly describe the reason for your visit</option>
+                <option value="Routine Check-up">Routine Check-up</option>
+                <option value="Follow-up Appointmentt">Follow-up Appointment</option>
+                <option value="Prescription Refill">Prescription Refill</option>
+                <option value="Cold/Flu Symptoms">Cold/Flu Symptoms</option>
+                <option value="Headache or Migraine">Headache or Migraine</option>
+            </select>
+
+            <label for="additionalNotes">Additional Notes:</label>
+            <select id="additionalNotes" name="additionalNotes">
+                <option value="" disabled selected>Any additional information or requests</option>
+                <option value="Allergies (e.g., penicillin, latex)">Allergies (e.g., penicillin, latex)</option>
+                <option value="Current Medications">Current Medications</option>
+                <option value="Previous Surgeries">Previous Surgeries</option>
+                <option value="Any Recent Hospitalizations">Any Recent Hospitalizations</option>
+                <option value="Insurance Information">Insurance Information</option>
+            </select>
+        </fieldset>
+    </form>
+</div>
+<!--End Doctor Consultation Reservation Form-->
+
+
+
+
+<!--Our Approach-->
+<section class="our-approach">
+    <h1>Our Approach</h1>
+    <div class="steps">
+        <div class="step">
+            <div class="icon">📄</div>
+            <p>1. Proposal</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="step">
+            <div class="icon">💬</div>
+            <p>2. Contracting</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="step">
+            <div class="icon">🚚</div>
+            <p>3. Delivery</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="step">
+            <div class="icon">✏️</div>
+            <p>4. Scoping</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="step">
+            <div class="icon">✔️</div>
+            <p>5. Closure</p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-button">1. Proposal</button>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">2. Contracting</button>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">3. Delivery</button>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">4. Scoping</button>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">5. Closure</button>
+        </div>
+    </div>
+</section>
+<!--End-->
+
+<!--i'm not a robot-->
+
+<div class="robot-check">
+    <label class="checkbox-container">
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+    <div class="robot-text">
+        <p>I'm not a robot</p>
+    </div>
+    <div class="captcha-logo">
+        <img src="images/robot.png" alt="Captcha">
+    </div>
+</div>
+<!--End-->
+
+<!--services details-->
+<h1>Our treatment and Services</h1>
+<p>Mayo Clinic is regularly acknowledged among the very 
+    best in the nation in the following specialties: Cancer. 
+    Cardiology and heart surgery. Diabetes and endocrinology.
+<a href="#"><b>Patient Registration Page</b></a></p>
+<!--End details-->
+
+<!--Footer-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <div class="footer-buttons">
+                <button>🩺 Find a doctor</button>
+                <button>💼 Explore careers</button>
+                <button>📬 Sign up for free e-newsletters</button>
+            </div>
+            <div class="footer-links">
+                <h4>About Mayo Clinic</h4>
+                <ul>
+                    <li><a href="#">About this site</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Health Information Policy</a></li>
+                    <li><a href="#">Medicare Accountable Care Organization (ACO)</a></li>
+                    <li><a href="#">Media Requests</a></li>
+                    <li><a href="#">News Network</a></li>
+                    <li><a href="#">Price Transparency</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Medical Professionals</h4>
+            <ul>
+                <li><a href="#">Ask Mayo Experts</a></li>
+                <li><a href="#">Clinical Trials</a></li>
+                <li><a href="#">Mayo Clinic Alumni Association</a></li>
+                <li><a href="#">Refer a Patient</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Businesses</h4>
+            <ul>
+                <li><a href="#">Executive Health Program</a></li>
+                <li><a href="#">International Business Collaborations</a></li>
+                <li><a href="#">Facilities & Real Estate</a></li>
+                <li><a href="#">Supplier Information</a></li>
+            </ul>
+            <h4>Students</h4>
+            <ul>
+                <li><a href="#">Admissions Requirements</a></li>
+                <li><a href="#">Degree Programs</a></li>
+                <li><a href="#">Student & Faculty Portal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Researchers</h4>
+            <ul>
+                <li><a href="#">Research Faculty</a></li>
+                <li><a href="#">Laboratories</a></li>
+            </ul>
+
+            <h4>International Patients</h4>
+            <ul>
+                <li><a href="#">Appointments</a></li>
+                <li><a href="#">Financial Services</a></li>
+                <li><a href="#">International Locations & Offices</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Charitable Care & Financial Assistance</h4>
+            <ul>
+                <li><a href="#">Community Health Needs Assessment</a></li>
+                <li><a href="#">Financial Assistance Documents - Arizona</a></li>
+                <li><a href="#">Financial Assistance Documents - Florida</a></li>
+                <li><a href="#">Financial Assistance Documents - Minnesota</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="social-media">
+            <p>Follow Mayo Clinic</p>
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><img src="images/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/mayoclinic/?hl=en"><img src="images/insta.png" alt="Instagram"></a>
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><img src="images/messen.png" alt="Messenger"></a>
+            <a href="https://x.com/MayoClinic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/twit.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/company/mayo-clinic/"><img src="images/linkdin.png" alt="linkdin"></a>
+        </div>
+        <div class="app-buttons">
+            <p>Get the Mayo Clinic app</p>
+            <a href="#"><img src="images/google play.png" alt="Google Play"></a>
+            <a href="#"><img src="images/app store.png" alt="App Store"></a>
+        </div>
+    </div>
+</footer>
+
+<!--Footer Ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./website.js"></script>
+</body>
+</html>

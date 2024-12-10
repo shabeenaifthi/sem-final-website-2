@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Order page</title>
+     <link rel="stylesheet" type="text/css" href="./style/style.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+<body>
+
+
+
+    <header>
+        <a href="./home page.html" class="brand">Mayo Clinic</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="./home page.html">Home Page</a>
+                <a href="./about us.html">About Us</a>
+                <a href="./doctors.html">Doctors</a>
+                <a href="./pharmacy.html">Pharmacy</a>
+                <a href="./service.html">Services</a>
+                <a href="./consulting and reservation.html">Consulting and Reservation</a>
+                <a href="./Order.html">Order</a>
+                <a href="./checkOut.html">CheckOut</a>
+            </div>
+        </div>
+    
+
+<div class="nav container">
+    <i class='bx bxs-shopping-bag' id="cart-icon" data-quantitiy ="0"></i>
+
+    <!--CART-->
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+    
+    <!--CONTENT-->
+    <div class="cart-content">
+        <div class="cart-box">
+            <img src="images/Amitriptyline.jpg" alt="" class="cart-img" width="90px" height="90px">
+            <div class="detail-box">
+                <div class="cart-product-title">Amitriptyline</div>
+                <div class="cart-price">$0.00</div>
+                <input type="number" name="" id="" value="1" class="cart-quantity">
+            </div>
+
+    <!--REMOVE ITEM-->
+    <i class='bx bx-trash-alt cart-remove'></i> 
+    </div>
+</div>
+    <!--TOTAL-->
+    <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0.00</div>
+    </div>
+    <!--BUY BUTTON-->
+    <button type="button" class="btn-buy">Pay Now</button>
+     <!--CLOSE CART-->
+    <i class='bx bx-x' id="close-cart"></i>
+    
+    </div>
+</div>
+</header>
+<!--End Add Cart Icon-->  
+
+
+
+
+
+
+
+
+    <section class="home">
+        <video class="video-slide" src="images/health.mp4" autoplay muted loop></video>
+        <div class="content">
+            <h1><b>Transforming your care</b><br><span><b>Learn how we drive innovation ></b></span></h1>
+            <p><b>a set of principles defined by the Mayo brothers in the early years of Mayo Clinic. It is the guide for how we work together to deliver coordinated care across the continuum to our patients, through a multidisciplinary team approach to treating the whole patient.</b></p>
+            <a href="#">Request appointment</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        //Javascript of responsive navigation menu 
+        const menuBtn = document.querySelector(".menu-btn");
+        const nav = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click",() => {
+            menuBtn.classList.toggle("active");
+            nav.classList.toggle("open");
+        });
+
+        
+    </script>
+
+
+
+<main class="section-container">
+    <!-- Section 1 -->
+    <section class="info-section">
+        <div class="text-container">
+            <h2>Diverse and Inclusive Care</h2>
+            <p>We're committed to transformational change to reduce health care disparities and create an empowered, diverse and inspired workforce who are dedicated to the health and well-being of our communities.</p>
+            <a href="https://www.mayoclinichealthsystem.org/about-us/diverse-and-inclusive-care">
+            <button class="cta-button">Learn About Our Values</button>
+            </a>
+
+        </div>
+        <div class="image-container">
+            <a href="https://www.mayoclinichealthsystem.org/about-us/diverse-and-inclusive-care">
+            <img src="images/diverse.jpg" alt="Person expressing gratitude">
+            </a>
+
+        </div>
+    </section>
+    
+    <!-- Section 2 -->
+    <section class="info-section reverse-layout">
+        <div class="image-container">
+            <a href="https://www.mayoclinichealthsystem.org/about-us/quality-and-safety-recognitions">
+            <img src="images/quality.jpg" alt="Happy patient in hospital">
+            </a>
+
+        </div>
+        <div class="text-container">
+            <h2>Quality and Innovation</h2>
+            <p>We understand what it means to bear the name of the nation’s No. 1 hospital, which is why we deliver patient care that meets Mayo Clinic’s standards for safety and quality.</p>
+            <a href="https://www.mayoclinichealthsystem.org/about-us/quality-and-safety-recognitions">
+            <button class="cta-button">View Our Recognitions</button>
+            </a>
+            
+        </div>
+    </section>
+</main>
+
+
+<main>
+    <!--Medicine Sections-->
+    <section id="medicine-catalog">
+        <h2><i><u>Available Medicine</u></i></h2>
+
+    <!--Analegsics Section-->
+        <div class="medicine-section">
+            <h3>Analegsics</h3>
+            <div class="medicine-item">
+                <img src="images/Paracetamol.jpg" alt="Paracetamol">
+                <div>
+                    <h4>Paracetamol</h4>
+                    <p>Price: $10.00</p>
+                    <input type="number" id="paracetamol" min="0" data-name="Paracetamol" data-price="10" placeholder="Quantity" value="1">
+                    <button class="add-to-cart" aria-label="Paracetamol">Add to Cart</button>
+                    <button class="favorite">❤️</button>
+                </div>
+            </div>
+
+            <div class="medicine-item">
+                <img src="images/Ibuprofen.jpg" alt="Ibuprofen">
+                <div>
+                    <h4>Ibuprofen</h4>
+                    <p>Price: $15.00</p>
+                    <input type="number" id="ibuprofen" min="0" data-name="Ibuprofen" data-price="10" placeholder="Quantity">
+                    <button class="add-to-cart" aria-label="Ibuprofen">Add to Cart</button>
+                    <button class="favorite">❤️</button>
+                </div>
+            </div>
+
+            <div class="medicine-item">
+                <img src="images/Aspirin.jpg" alt="Aspirin">
+                <div>
+                    <h4>Aspirin</h4>
+                    <p>Price: $15.00</p>
+                    <input type="number" id="aspirin" min="0" data-name="Aspirin" data-price="10" placeholder="Quantity">
+                    <button class="add-to-cart" aria-label="Aspirin">Add to Cart</button>
+                    <button class="favorite">❤️</button>
+                </div>
+            </div>
+
+            <div class="medicine-item">
+                <img src="images/Morphine.jpg" alt="Morphine">
+                <div>
+                    <h4>Morphine</h4>
+                    <p>Price: $75.00</p>
+                    <input type="number" id="morphine" min="0" data-name="Morphine" data-price="10" placeholder="Quantity">
+                    <button class="add-to-cart" aria-label="Morphine">Add to Cart</button>
+                    <button class="favorite">❤️</button>
+                </div>
+            </div>
+
+            <div class="medicine-item">
+                <img src="images/Tramadol.jpg" alt="Tramadol">
+                <div>
+                    <h4>Tramadol</h4>
+                    <p>Price: $75.00</p>
+                    <input type="number" id="tramadol" min="0" data-name="Tramadol" data-price="10" placeholder="Quantity">
+                    <button class="add-to-cart" aria-label="Tramadol">Add to Cart</button>
+                    <button class="favorite">❤️</button>
+                </div>
+            </div>
+
+            <div class="medicine-item">
+                <img src="images/Codeine.jpg" alt="Codeine">
+                <div>
+                    <h4>Codeine</h4>
+                    <p>Price: $75.00</p>
+                    <input type="number" id="codeine" min="0" data-name="Codeine" data-price="10" placeholder="Quantity">
+                    <button class="add-to-cart" aria-label="Codeine">Add to Cart</button>
+                    <button class="favorite">❤️</button>
+                </div>
+            </div>
+            <!--END ANALGESICS-->
+        </div>
+
+
+    <!--ANTIBIOTICS SECTION-->
+    <div class="medicine-section">
+        <h3>Antibiotics</h3>
+        <div class="medicine-item">
+            <img src="images/Amoxicillin.jpg" alt="Amoxicillin">
+            <div>
+        <h4>Amoxicillin</h4>
+        <p>price: $20.00</p>
+        <input type="number" id="amoxicillin" min="0" value="0" data-name="Amoxicillin" data-price="20" placeholder="Quantity">
+        <button class="add-to-cart" aria-label="Amoxicillin">Add to Cart</button>
+        <button class="favorite">❤️</button>
+            </div>
+        </div>
+
+        <div class="medicine-item">
+            <img src="images/Azithromycin.jpg" alt="Azithromycin">
+            <div>
+        <h4>Azithromycin</h4>
+        <p>price: $20.00</p>
+        <input type="number" id="azithromycin" min="0" value="0" data-name="Azithromycin" data-price="20" placeholder="Quantity">
+        <button class="add-to-cart" aria-label="Azithromycin">Add to Cart</button>
+        <button class="favorite">❤️</button>
+            </div>
+        </div>
+
+        <div class="medicine-item">
+            <img src="images/Doxycycline.jpg" alt="Doxycycline">
+            <div>
+        <h4>Doxycycline</h4>
+        <p>price: $20.00</p>
+        <input type="number" id="doxycycline" min="0" value="0" data-name="Doxycycline" data-price="20" placeholder="Quantity">
+        <button class="add-to-cart" aria-label="Doxycycline">Add to Cart</button>
+        <button class="favorite">❤️</button>
+            </div>
+        </div>
+
+        <div class="medicine-item">
+            <img src="images/Cephalexin.jpg" alt="Cephalexin">
+            <div>
+        <h4>Cephalexin</h4>
+        <p>price: $20.00</p>
+        <input type="number" id="cephalexin" min="0" value="0" data-name="Cephalexin" data-price="20" placeholder="Quantity">
+        <button class="add-to-cart" aria-label="Cephalexin">Add to Cart</button>
+        <button class="favorite">❤️</button>
+            </div>
+        </div>
+        <!--END ANTIBIOTICS-->
+    </div>
+
+    <!-- ANTIDEPRESSANTS SECTION-->
+     
+    <h3>Antidepressants</h3>
+    <div class="medicine-item">
+        <img src="images/Fluoxetine (Prozac).jpg" alt="Fluoxetine ">
+        <div>
+            <h4>Fluoxetine </h4>
+            <p>Price: $20.00</p>
+            <input type="number" id="fluoxetine " min="0" value="0" data-name="Fluoxetine " data-price="20">
+            <button class="add-to-cart" aria-label="Fluoxetine">Add to Cart</button>
+            <button class="favorite">❤️</button>
+        </div>
+    </div>
+    
+    <div class="medicine-item">
+        <img src="images/Sertraline (Zoloft).jpg" alt="Sertraline ">
+        <div>
+            <h4>Sertraline </h4>
+            <p>Price: $75.00</p>
+            <input type="number" id="sertraline " min="0" data-name="Sertraline " data-price="10" placeholder="Quantity">
+            <button class="add-to-cart" aria-label="Sertraline">Add to Cart</button>
+            <button class="favorite">❤️</button>
+        </div>
+    </div>
+
+    <div class="medicine-item">
+        <img src="images/Amitriptyline.jpg" alt="Amitriptyline" class="medicine-img">
+        <div>
+            <h4>Amitriptyline</h4>
+            <p>Price: $75.00</p>
+            <input type="number" id="amitriptyline" min="0" data-name="Amitriptyline" data-price="10" placeholder="Quantity">
+            <button class="add-to-cart" aria-label="Amitriptyline">Add to Cart</button>
+            <button class="favorite">❤️</button>
+        </div>
+    </div>
+
+    <div class="medicine-item">
+        <img src="images/Escitalopram (Lexapro).jpg" alt="Escitalopram ">
+        <div>
+            <h4>Escitalopram </h4>
+            <p>Price: $75.00</p>
+            <input type="number" id="escitalopram " min="0" data-name="Escitalopram " data-price="10" placeholder="Quantity">
+            <button class="add-to-cart" aria-label="Escitalopram">Add to Cart</button>
+            <button class="favorite">❤️</button>
+        </div>
+    </div>
+
+    <div class="medicine-item">
+        <img src="images/Venlafaxine.jpg" alt="Venlafaxine">
+        <div>
+            <h4>Venlafaxine</h4>
+            <p>Price: $75.00</p>
+            <input type="number" id="venlafaxine" min="0" data-name="Venlafaxine" data-price="10" placeholder="Quantity">
+            <button class="add-to-cart" aria-label="Venlafaxine">Add to Cart</button>
+            <button class="favorite">❤️</button>
+        </div>
+    </div>
+
+    <div class="medicine-item">
+        <img src="images/Duloxetine (Cymbalta).jpg" alt="Duloxetine (Cymbalta)">
+        <div>
+            <h4>Duloxetine (Cymbalta)</h4>
+            <p>Price: $105.00</p>
+            <input type="number" id="duloxetine (cymbalta)" min="0" data-name="Duloxetine (Cymbalta)" data-price="10" placeholder="Quantity">
+            <button class="add-to-cart" aria-label="Duloxetine">Add to Cart</button>
+            <button class="favorite">❤️</button>
+        </div>
+    </div>
+     <!-- END ANTIDEPRESSANTS SECTION-->
+</div>
+
+     <!-- ANTIHISTAMINES SECTION-->
+
+     <div class="medicine-section">
+        <h3>Antihistamines</h3>
+        <div class="medicine-item">
+            <img src="images/Diphenhydramine.jpg" alt="Diphenhydramine">
+            <div>
+                <h4>Diphenhydramine</h4>
+                <p>Price: $20</p>
+                <input type="number" id="diphenhydramine" min="0" value="0" data-name="Diphenhydramine" data-price="20">
+                <button class="add-to-cart" aria-label="Diphenhydramine">Add to Cart</button>
+                <button class="favorite">❤️</button>
+            </div>
+        </div>
+
+        <div class="medicine-item">
+            <img src="images/Loratadine.jpg" alt="Loratadine">
+            <div>
+                <h4>Loratadine</h4>
+                <p>Price: $20</p>
+                <input type="number" id="loratadine" min="0" value="0" data-name="Loratadine" data-price="20">
+                <button class="add-to-cart" aria-label="Loratadine">Add to Cart</button>
+                <button class="favorite">❤️</button>
+            </div>
+        </div>
+
+        <div class="medicine-item">
+            <img src="images/Cetirizine.jpg" alt="Cetirizine">
+            <div>
+                <h4>Cetirizine</h4>
+                <p>Price: $20</p>
+                <input type="number" id="cetirizine" min="0" value="0" data-name="Cetirizine" data-price="20">
+                <button class="add-to-cart" aria-label="Cetirizine">Add to Cart</button>
+                <button class="favorite">❤️</button>
+            </div>
+        </div>
+
+        <div class="medicine-item">
+            <img src="images/Fexofenadine.jpg" alt="Fexofenadine">
+            <div>
+                <h4>Fexofenadine</h4>
+                <p>Price: $20</p>
+                <input type="number" id="fexofenadine" min="0" value="0" data-name="Fexofenadine" data-price="20">
+                <button class="add-to-cart" aria-label="Fexofenadine">Add to Cart</button>
+                <button class="favorite">❤️</button>
+            </div>
+        </div>
+
+        <div class="medicine-item">
+            <img src="images/Chlorpheniramine.jpg" alt="Chlorpheniramine">
+            <div>
+                <h4>Chlorpheniramine</h4>
+                <p>Price: $20</p>
+                <input type="number" id="chlorpheniramine" min="0" value="0" data-name="Chlorpheniramine" data-price="20">
+                <button class="add-to-cart" aria-label="Chlorpheniramine">Add to Cart</button>
+                <button class="favorite">❤️</button>
+            </div>
+        </div>
+
+        <div class="medicine-item">
+            <img src="images/Levocetirizine.jpg" alt="Levocetirizine">
+            <div>
+                <h4>Levocetirizine</h4>
+                <p>Price: $20</p>
+                <input type="number" id="levocetirizine" min="0" value="0" data-name="Levocetirizine" data-price="20">
+                <button class="add-to-cart" aria-label="Levocetirizine">Add to Cart</button>
+                <button class="favorite">❤️</button>
+            </div>
+        </div>
+            <!-- END ANTIHISTAMINES SECTION-->
+    </div>
+     
+    <!--ANTIHYPERTENSIVES SECTION-->
+
+    <div class="medicine-section">
+        <h3>Antihypertensives</h3>
+        <div class="medicine-item">
+            <img src="images/Lisinopril.jpg" alt="Lisinopril">
+            <div>
+                <h4>Lisinopril</h4>
+                <p>Price: $20</p>
+                <input type="number" id="lisinopril" min="0" value="0" data-name="Lisinopril" data-price="20">
+                <button class="add-to-cart" aria-label="Lisinopril">Add to Cart</button>
+                <button class="favorite">❤️</button>
+            </div>
+        </div>
+
+        <div class="medicine-item">
+            <img src="images/Amlodipine.jpg" alt="Amlodipine">
+            <div>
+                <h4>Amlodipine</h4>
+                <p>Price: $20</p>
+                <input type="number" id="amlodipine" min="0" value="0" data-name="Amlodipine" data-price="20">
+                <button class="add-to-cart" aria-label="Amlodipine">Add to Cart</button>
+                <button class="favorite">❤️</button>
+            </div>
+        </div>
+
+        <div class="medicine-item">
+            <img src="images/Losartan.jpg" alt="Losartan">
+            <div>
+                <h4>Losartan</h4>
+                <p>Price: $20</p>
+                <input type="number" id="losartan" min="0" value="0" data-name="Losartan" data-price="20">
+                <button class="add-to-cart" aria-label="Losartan">Add to Cart</button>
+                <button class="favorite">❤️</button>
+            </div>
+        </div>
+
+        <div class="medicine-item">
+            <img src="images/Metoprolol.jpg" alt="Lisinopril">
+            <div>
+                <h4>Metoprolol</h4>
+                <p>Price: $20</p>
+                <input type="number" id="metoprolol" min="0" value="0" data-name="Metoprolol" data-price="20">
+                <button class="add-to-cart" aria-label="Metoprolol">Add to Cart</button>
+                <button class="favorite">❤️</button>
+            </div>
+        </div>
+
+        <div class="medicine-item">
+            <img src="images/Atenolol.jpg" alt="Atenolol">
+            <div>
+                <h4>Atenolol</h4>
+                <p>Price: $20</p>
+                <input type="number" id="atenolol" min="0" value="0" data-name="Atenolol" data-price="20">
+                <button class="add-to-cart" aria-label="Atenolol">Add to Cart</button>
+                <button class="favorite">❤️</button>
+            </div>
+        </div>
+
+        <div class="medicine-item">
+            <img src="images/Hydrochlorothiazide.jpg" alt="Hydrochlorothiazide">
+            <div>
+                <h4>Hydrochlorothiazide</h4>
+                <p>Price: $20</p>
+                <input type="number" id="hydrochlorothiazide" min="0" value="0" data-name="Hydrochlorothiazide" data-price="20">
+                <button class="add-to-cart" aria-label="Hydrochlorothiazide">Add to Cart</button>
+                <button class="favorite">❤️</button>
+            </div>
+        </div>
+        <!--END ANTIHYPERTENSIVES SECTION-->
+    </div>
+
+    </section>
+
+<!--End medicine section-->
+
+<!--cart section-->
+<section id="cart-section">
+    
+    <h2>Your Cart</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody id="cart-body">
+             <!-- Items will be added dynamically -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><strong>Total:</strong></td>
+                <td id="total-price">$0</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+        <button id="checkout">CheckOut</button>
+
+
+        <section class="favourite-order">
+            <h2>Your Favorite Medicines</h2>
+            <button id="save-favourite" class="btn-save">Save as Favourite</button>
+            <button id="apply-favourite" class="btn-apply">Apply Favourite</button>
+        </section>
+    </section>
+
+   
+</main>
+
+<!--More Details-->
+<h1>What's Happening In the Community</h1>
+
+<main>
+    <section class="community-highlights">
+        <!-- Card 1 -->
+        <div class="card">
+            <a href="https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/are-you-getting-too-much-protein">
+            <img src="images/handful-of-nuts.jpg" alt="A hand holding nuts">
+            </a>
+
+            <div class="content">
+                <div class="tag">Speaking of Health</div>
+                <h2>Are you getting enough protein?</h2>
+                <p>Most people in the U.S. exceed their protein needs. But those on restricted diets or weight-loss medications may need more. Learn what's the right amount of protein for you.</p>
+                <p class="author">By Kristi Wempen | November 27, 2024</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <a href="https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/4-tips-for-enjoying-holiday-gatherings-while-drinking-responsibly">
+            <img src="images/holiday-punch-drinks.jpg" alt="Holiday drinks">
+            </a>
+
+            <div class="content">
+                <div class="tag">Speaking of Health</div>
+                <h2>4 tips for enjoying holiday gatherings while drinking responsibly</h2>
+                <p>Alcohol consumption peaks during the holidays and can lead to a serious issue with binge drinking. Learn what's considered binge drinking and get four tips for enjoying holiday gatherings responsibly.</p>
+                <p class="author">By Yilin Gui | November 26, 2024</p>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <a href="https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/winter-nights-offer-fun-fitness-adventure">
+            <img src="images/winter-night-snow-trail.jpg" alt="Snowy night scene">
+            </a>
+
+            <div class="content">
+                <div class="tag">Speaking of Health</div>
+                <h2>Winter night fun: Ways to embrace the season and beat the winter blues</h2>
+                <p>The long nights of winter can get you down, but they also offer magical ways to be active outdoors and lift your mood. Explore the dark with these ideas.</p>
+                <p class="author">By Aicha Katty | November 25, 2024</p>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card">
+            <a href="https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/what-are-your-options-for-shoulder-replacement-surgery">
+            <img src="images/lady-reaching-for-upper-kitchen-shelf.jpg" alt="Person stretching their shoulder">
+            </a>
+
+            <div class="content">
+                <div class="tag">Speaking of Health</div>
+                <h2>What are your options for shoulder replacement surgery?</h2>
+                <p>When noninvasive approaches don’t relieve your shoulder pain, it’s time to consult an orthopedic surgeon to discuss if shoulder replacement may be needed to relieve the pain.</p>
+                <p class="author">By Douglas (Doug) Bartels | November 20, 2024</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="community-highlights">
+        <!-- Card 1 -->
+        <div class="card">
+            <a href="https://www.mayoclinichealthsystem.org/hometown-health/patient-stories/a-portrait-of-belonging-thea-lenhart-inspires-joy-through-project-search-work">
+            <img src="images/thea-lenhart.jpg" alt="A hand holding nuts">
+            </a>
+
+            <div class="content">
+                <div class="tag">Speaking of Health</div>
+                <h2>A portrait of belonging: Thea Lenhart inspires joy through Project SEARCH work</h2>
+                <p>Thea Lenhart inspires joy every day through Project SEARCH. The transition-to-work initiative helps young adults with disabilities build employment skills through hands-on training and employment.</p>
+                <p class="author">By Kristi Wempen | November 27, 2024</p>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <a href="https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/is-it-healthy-to-eat-eggs-every-day">
+            <img src="images/egg-yolk-running-on-toast.jpg" alt="Holiday drinks">
+            </a>
+
+            <div class="content">
+                <div class="tag">Speaking of Health</div>
+                <h2>Is it healthy to eat eggs every day? Crack open the facts</h2>
+                <p>Are you weighing the health benefits of eggs? Learn what nutrients are packed inside the shell and how eggs can be a healthy, versatile choice for any meal of the day.</p>
+                <p class="author">By Yilin Gui | November 26, 2024</p>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <a href="https://www.mayoclinichealthsystem.org/hometown-health/patient-stories/home-blood-pressure-monitoring-benefits-dan-knapp">
+            <img src="images/home-bp-monitor.jpg" alt="Snowy night scene">
+            </a>
+
+            <div class="content">
+                <div class="tag">Speaking of Health</div>
+                <h2>Home blood pressure monitoring benefits Dan Knapp</h2>
+                <p>Dan Knapp prioritizes his health through annual visits with his care team, medications for chronic conditions and regular home blood pressure monitoring. Read about the benefits of at-home monitoring.</p>
+                <p class="author">By Aicha Katty | November 25, 2024</p>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card">
+            <a href="https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/your-sinus-headache-may-not-be-what-you-think">
+            <img src="images/lady-picking-up-delivered-package.jpg" alt="Person stretching their shoulder">
+            </a>
+
+            <div class="content">
+                <div class="tag">Speaking of Health</div>
+                <h2>Your sinus headache may not be what you think</h2>
+                <p>If you have pain or pressure in your forehead with nasal symptoms, you may think it's a sinus headache. But 90% of people with these symptoms are actually experiencing migraine headaches. Learn more.</p>
+                <p class="author">By Douglas (Doug) Bartels | November 20, 2024</p>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+<!--Footer-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <div class="footer-buttons">
+                <button>🩺 Find a doctor</button>
+                <button>💼 Explore careers</button>
+                <button>📬 Sign up for free e-newsletters</button>
+            </div>
+            <div class="footer-links">
+                <h4>About Mayo Clinic</h4>
+                <ul>
+                    <li><a href="#">About this site</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Health Information Policy</a></li>
+                    <li><a href="#">Medicare Accountable Care Organization (ACO)</a></li>
+                    <li><a href="#">Media Requests</a></li>
+                    <li><a href="#">News Network</a></li>
+                    <li><a href="#">Price Transparency</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Medical Professionals</h4>
+            <ul>
+                <li><a href="#">Ask Mayo Experts</a></li>
+                <li><a href="#">Clinical Trials</a></li>
+                <li><a href="#">Mayo Clinic Alumni Association</a></li>
+                <li><a href="#">Refer a Patient</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Businesses</h4>
+            <ul>
+                <li><a href="#">Executive Health Program</a></li>
+                <li><a href="#">International Business Collaborations</a></li>
+                <li><a href="#">Facilities & Real Estate</a></li>
+                <li><a href="#">Supplier Information</a></li>
+            </ul>
+            <h4>Students</h4>
+            <ul>
+                <li><a href="#">Admissions Requirements</a></li>
+                <li><a href="#">Degree Programs</a></li>
+                <li><a href="#">Student & Faculty Portal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Researchers</h4>
+            <ul>
+                <li><a href="#">Research Faculty</a></li>
+                <li><a href="#">Laboratories</a></li>
+            </ul>
+
+            <h4>International Patients</h4>
+            <ul>
+                <li><a href="#">Appointments</a></li>
+                <li><a href="#">Financial Services</a></li>
+                <li><a href="#">International Locations & Offices</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Charitable Care & Financial Assistance</h4>
+            <ul>
+                <li><a href="#">Community Health Needs Assessment</a></li>
+                <li><a href="#">Financial Assistance Documents - Arizona</a></li>
+                <li><a href="#">Financial Assistance Documents - Florida</a></li>
+                <li><a href="#">Financial Assistance Documents - Minnesota</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="social-media">
+            <p>Follow Mayo Clinic</p>
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><img src="images/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/mayoclinic/?hl=en"><img src="images/insta.png" alt="Instagram"></a>
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><img src="images/messen.png" alt="Messenger"></a>
+            <a href="https://x.com/MayoClinic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/twit.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/company/mayo-clinic/"><img src="images/linkdin.png" alt="linkdin"></a>
+        </div>
+        <div class="app-buttons">
+            <p>Get the Mayo Clinic app</p>
+            <img src="images/google play.png" alt="Google Play" class="download-app">
+            <img src="images/app store.png" alt="App Store" class="download-app">
+        </div>
+    </div>
+</footer>
+
+<!--Footer Ends-->
+
+
+
+
+<script src="./website.js"></script>
+</body>
+</html>

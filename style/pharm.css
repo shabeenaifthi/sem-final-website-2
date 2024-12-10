@@ -1,0 +1,541 @@
+/*navbar*//*video*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+header .brand {
+    color: black;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .navigation {
+    position: relative;
+}
+header .navigation .navigation-items a {
+    position: relative;
+    color: #000000;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a::before{
+    content: '';
+    position: absolute;
+    background: #000000;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+}
+section {
+    padding: 100px 200px;
+}
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #dbf0fa;
+}
+.home::before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+.home .content {
+    z-index: 888;
+    color: #0cb5b5;
+    width: 70%;
+    margin-top: 50px;
+}
+.home .content h1 {
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+.home .content h1 span {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.home .content p {
+    margin-bottom: 65px;
+    font-size: 130%;
+}
+.home .content a {
+    background: #ffffff;
+    padding: 15px 35px;
+    color: #0398dd;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px;
+}
+.home .media-icons {
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+.home .media-icons a {
+    color: #000;
+    font-size: 2.8em;
+    transition: 0.3s ease;
+}
+.home .media-icons a:not(:last-child) {
+    margin-bottom: 20px;
+}
+.home .media-icons a:hover {
+    transform: scale(1.3);
+}
+.home video {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width:1040px) {
+    header {
+        
+        padding: 12px 20px;
+    }
+    section {
+        padding: 100px 20px;
+    }
+    .home .media-icons {
+        right: 15px;
+    }
+    header .navigation {
+        position: fixed ;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1, 1, 1, 0.5);
+    }
+    header .navigation .navigation-items a {
+       
+        color: #000;
+        font-size: 1em;
+        margin: 20px;
+    }
+    .menu-btn {
+        background: url(images/ham.png)no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .menu-btn .active {
+        z-index: 999;
+        background: url(images/cross.png);
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#ffffff,rgb(252, 252, 252));
+    position: relative;
+    padding: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*video end*/
+
+
+
+
+/*PHARMACY PAGE*/
+
+            /*Introduction section*/
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f9f9f9;
+            }
+            .container {
+                display: flex;
+                max-width: 1200px;
+                margin: 20px auto;
+            }
+            .slidebar {
+                width: 25%;
+                background-color: #fff;
+                padding: 20px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+            .slidebar ul {
+                list-style: none;
+                padding: 0;
+            }
+            .slidebar ul li {
+                padding: 10px 0;
+            }
+            .slidebar ul li a {
+                text-decoration: none;
+                color: #333;
+            }
+            .slidebar ul li a:hover {
+                text-decoration: underline;
+            }
+            .content {
+                width: 75%;
+                padding: 20px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+            .content h1 {
+                font-size: 24px;
+                margin-bottom: 20px;
+                font-size: 29px;
+            }
+            .content p {
+                font-size: 16px;
+                line-height: 1.5;
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+            .service-section {
+                margin-bottom: 20px;
+            }
+            .service-section h2 {
+                font-size: 18px;
+                margin-bottom: 10px;
+                font-size: 30px;
+            }
+            .service-section p {
+                margin: 5px 0;
+                font-size: 20px;
+            }
+            .service-section a {
+                color: #0073e6;
+                text-decoration: none;
+            }
+            .service-section a:hover {
+                text-decoration: underline;
+            }
+            /*end*/
+            
+            /*Paragraph*/
+            h1 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+            /*end*/
+            
+            /*Mayo clinic-pharmacy medicine purchase form*/
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: 'Arial', sans-serif;
+            }
+            
+            body {
+                background-color: #f4f8fb;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .container {
+                width: 500%;
+                max-width: 900px;  /* Increased the max-width for a wider layout */
+                background-color: #ffffff;
+                padding: 30px; /* Increased padding for more space around form content */
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+                border: 1px solid #e0e0e0;
+            }
+            
+            h1 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #2a9d8f;
+                font-weight: 700;
+            }
+            
+            form {
+                width: 100%;
+            }
+            
+            fieldset {
+                border: 2px solid #2a9d8f;
+                padding: 25px; /* Increased padding inside each fieldset */
+                margin-bottom: 20px; /* Increased margin between fieldsets */
+                border-radius: 8px;
+                background-color: #f9fdfd;
+            }
+            
+            legend {
+                font-weight: 600;
+                color: #264653;
+                padding: 0 10px;
+            }
+            
+            label {
+                display: block;
+                margin-bottom: 10px; /* Slightly increased margin for more spacing between labels and inputs */
+                font-weight: 600;
+                color: #264653;
+            }
+            input[type="text"],
+            input[type="tel"],
+            input[type="number"],
+            input[type="email"],
+            input[type="date"],
+            input[type="file"],
+            select {
+                width: 100%;
+                padding: 12px; /* Increased padding for more space inside input fields */
+                margin-bottom: 20px; /* Increased margin to create more space between form elements */
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                background-color: #f4f4f4;
+                font-size: 16px; /* Slightly larger font for readability */
+            }
+            
+            input[type="text"]:focus,
+            input[type="tel"]:focus,
+            input[type="number"]:focus,
+            input[type="email"]:focus,
+            input[type="date"]:focus,
+            input[type="file"]:focus,
+            select:focus {
+                outline: none;
+                border-color: #2a9d8f;
+                background-color: #ffffff;
+            }
+            button[type="submit"] {
+                width: 100%;
+                padding: 15px;
+                background-color: #2a9d8f;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                font-weight: 600;
+                cursor: pointer;
+                font-size: 18px; /* Increased font size for a larger button text */
+            }
+            
+            button[type="submit"]:hover {
+                background-color: #264653;
+            }
+            
+            .card-details,
+            .insurance-details {
+                display: none;
+            }
+            
+            #paymentMethod {
+                margin-bottom: 20px; /* Slightly increased space below the payment method field */
+            }
+            
+            .card-details label,
+            .insurance-details label {
+                margin-bottom: 10px; /* More spacing between labels in the card and insurance details sections */
+            }
+            
+            /* Display card details if Credit/Debit selected */
+            #paymentMethod[value="credit"] ~ .card-details,
+            #paymentMethod[value="debit"] ~ .card-details {
+                display: block;
+            }
+            
+            /* Display insurance details if Insurance selected */
+            #paymentMethod[value="insurance"] ~ .insurance-details {
+                display: block;
+            }
+            
+            input[type="file"] {
+                border: 1px solid #ddd;
+                padding: 10px; /* Increased padding for file input field */
+            }
+            input::placeholder {
+                color: #aaa;
+            }
+            
+            select {
+                background-color: #f9fdfd;
+            }
+            
+            option {
+                padding: 10px;
+            }
+            
+            fieldset label,
+            input,
+            select {
+                font-size: 16px; /* Larger font for better readability */
+            }
+            /*End Mayo clinic-pharmacy medicine purchase form*/
+            
+            
+            
+            /*online medicine*/
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 500px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+                font-size: 10px;
+              }
+              
+              .price {
+                color: grey;
+                font-size: 22px;
+              }
+              
+              .card button {
+                border: none;
+                outline: 0;
+                padding: 12px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+              }
+              
+              .card button:hover {
+                opacity: 0.7;
+              }
+
+
+
+
+/*Footer section*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer {
+    background-color: #0d4e8e;
+    color: white;
+    padding: 10px 0;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-buttons button {
+    display: block;
+    margin-bottom: 10px;
+    background-color: white;
+    color: #0d4e8e;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.footer-buttons button:hover {
+    background-color: #e0e0e0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.social-media img {
+    margin: 0 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.app-buttons img {
+    margin: 0 10px;
+    width: 120px;
+}
+/*End Footer*/

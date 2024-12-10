@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" dir="Itr">
+
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="./style/checkout.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 2em auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        #total-price {
+            text-align: right;
+            font-weight: bold;
+            margin-right: 10%;
+        }
+        .empty-cart {
+            text-align: center;
+            margin: 2em;
+            color: red;
+            font-weight: bold;
+        }
+     </style>
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Checkout</h1>
+        <a href="#" class="brand">Mayo Clinic</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="./home page.html">Home Page</a>
+                <a href="./about us.html">About Us</a>
+                <a href="./doctors.html">Doctors</a>
+                <a href="./pharmacy.html">Pharmacy</a>
+                <a href="./service.html">Services</a>
+                <a href="./consulting and reservation.html">Consulting and Reservation</a>
+                <a href="./Order.html">Order</a>
+                <a href="./checkOut.html">CheckOut</a>
+            </div>
+        </div>
+    </header>
+
+        
+    <section class="home">
+        <video class="video-slide" src="images/health.mp4" autoplay muted loop></video>
+        <div class="content">
+            <h1><b>Transforming your care</b><br><span><b>Learn how we drive innovation ></b></span></h1>
+            <p><b>a set of principles defined by the Mayo brothers in the early years of Mayo Clinic. It is the guide for how we work together to deliver coordinated care across the continuum to our patients, through a multidisciplinary team approach to treating the whole patient.</b></p>
+            <a href="#">Request appointment</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        //Javascript of responsive navigation menu 
+        const menuBtn = document.querySelector(".menu-btn")
+
+        menuBtn.addEventListener("click",() => {
+            menuBtn.classList.toggle("active");
+        })
+
+    </script>
+
+
+<div class="checkout-container">
+    <h1>Checkout</h1>
+    <div class="cart-summary">
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="checkout-cart-body">
+                <!-- Cart items will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <h3>Total: <span id="checkout-total-price">$0.00</span></h3>
+    <a href="./success.html">
+    <button id="pay-now">Pay</button>
+    </a>
+</div>
+
+
+
+ <!-- Payment Form -->
+ <div class="form-container">
+    <form id="billing-form">
+      <div class="form-section">
+        <h2>Billing Address</h2>
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" placeholder="John M. Doe" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" placeholder="542 W. 15th Street" required>
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" placeholder="New York" required>
+
+        <label for="state">State</label>
+        <input type="text" id="state" name="state" placeholder="NY" required>
+
+        <label for="zip">Zip</label>
+        <input type="text" id="zip" name="zip" placeholder="10001" required>
+        
+        <label>
+          <input type="checkbox" id="same-as-billing" checked>
+          Shipping address same as billing
+        </label>
+      </div>
+
+
+
+      <div class="form-section">
+        <h2>Payment</h2>
+        <label for="name-on-card">Name on Card</label>
+        <input type="text" id="name-on-card" name="name-on-card" placeholder="John More Doe" required>
+
+        <label for="card-number">Credit card number</label>
+        <input type="text" id="card-number" name="card-number" placeholder="1111-2222-3333-4444" required>
+
+        <label for="exp-month">Exp Month</label>
+        <input type="text" id="exp-month" name="exp-month" placeholder="September" required>
+
+        <label for="exp-year">Exp Year</label>
+        <input type="text" id="exp-year" name="exp-year" placeholder="2018" required>
+
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" placeholder="352" required>
+      </div>
+
+      <button type="submit">Continue to checkout</button>
+    </form>
+  </div>
+
+  
+  <!--Cards methods-->
+  <div class="checkout-container">
+    <div class="progress-bar">
+      <span class="step active">Delivery</span>
+      <span class="step active">Confirmation</span>
+      <span class="step active">Payment</span>
+      <span class="step">Finish</span>
+    </div>
+
+    <form id="checkout-form">
+      <div class="payment-options">
+        <label>
+          <input type="radio" name="payment-method" value="credit-card" checked>
+          <div class="option">
+            <img src="./images/visam.png" alt="Credit Card">
+            <span>Pay £340.00 with credit card</span>
+          </div>
+        </label>
+        <label>
+          <input type="radio" name="payment-method" value="paypal">
+          <div class="option">
+            <img src="./images/paypal.png" alt="PayPal">
+            <span>Pay £340.00 with PayPal</span>
+          </div>
+        </label>
+      </div>
+
+      <div class="card-details">
+        <label for="cardholder-name">Cardholder's Name</label>
+        <input type="text" id="cardholder-name" placeholder="John Doe" required>
+
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" placeholder="1234 5678 9123 4567" required>
+
+        <div class="row">
+          <div class="column">
+            <label for="valid-thru">Valid Thru (MM/YY)</label>
+            <input type="text" id="valid-thru" placeholder="MM / YY" required>
+          </div>
+          <div class="column">
+            <label for="cvv">CVV / CVC *</label>
+            <input type="text" id="cvv" placeholder="123" required>
+          </div>
+        </div>
+        <p class="info">* CVV or CVC is the security code on the back of your card.</p>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" id="back-button">Back</button>
+        <button type="submit">Next Step</button>
+      </div>
+    </form>
+  </div>
+<!--End Cards methods-->
+<script>
+    document.getElementById("back-button").addEventListener("click", function () {
+      window.location.href = "./Order.html"; // Replace with your target URL
+    });
+  </script>
+
+<!--more info-->
+<form id="payment-delivery-form">
+    <h3>Preferred Payment Method</h3>
+    <label>
+      <input type="radio" name="payment-method" value="Insurance"> Insurance
+    </label>
+    <label>
+      <input type="radio" name="payment-method" value="Credit Card"> Credit Card
+    </label>
+    <label>
+      <input type="radio" name="payment-method" value="Cash"> Cash
+    </label>
+    <label>
+      <input type="radio" name="payment-method" value="Other"> Other
+    </label>
+
+    <h3>Delivery/Pickup Preference</h3>
+    <label>
+      <input type="radio" name="delivery-method" value="Delivery"> Delivery
+    </label>
+    <label>
+      <input type="radio" name="delivery-method" value="In-Store Pickup"> In-Store Pickup
+    </label>
+    <label>
+      <input type="radio" name="delivery-method" value="Other"> Other
+    </label>
+
+    <h3>Additional Instructions or Comments</h3>
+    <textarea name="additional-comments" placeholder="Enter your instructions or comments here..."></textarea>
+
+    <h3>Terms and Conditions:</h3>
+    <ul>
+      <li>The pharmacy will process the order once all necessary information is provided.</li>
+      <li>Prescription orders may require verification with the prescribing doctor.</li>
+      <li>Insurance coverage will be verified, and any copayments will be communicated to the customer.</li>
+      <li>Payment is due at the time of delivery/pickup.</li>
+    </ul>
+
+    <a href="./success.html">
+      <button type="button">Continue to checkout</button>
+    </a>
+  </form>
+
+
+<!--Footer-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <div class="footer-buttons">
+                <button>🩺 Find a doctor</button>
+                <button>💼 Explore careers</button>
+                <button>📬 Sign up for free e-newsletters</button>
+            </div>
+            <div class="footer-links">
+                <h4>About Mayo Clinic</h4>
+                <ul>
+                    <li><a href="#">About this site</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Health Information Policy</a></li>
+                    <li><a href="#">Medicare Accountable Care Organization (ACO)</a></li>
+                    <li><a href="#">Media Requests</a></li>
+                    <li><a href="#">News Network</a></li>
+                    <li><a href="#">Price Transparency</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Medical Professionals</h4>
+            <ul>
+                <li><a href="#">Ask Mayo Experts</a></li>
+                <li><a href="#">Clinical Trials</a></li>
+                <li><a href="#">Mayo Clinic Alumni Association</a></li>
+                <li><a href="#">Refer a Patient</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Businesses</h4>
+            <ul>
+                <li><a href="#">Executive Health Program</a></li>
+                <li><a href="#">International Business Collaborations</a></li>
+                <li><a href="#">Facilities & Real Estate</a></li>
+                <li><a href="#">Supplier Information</a></li>
+            </ul>
+            <h4>Students</h4>
+            <ul>
+                <li><a href="#">Admissions Requirements</a></li>
+                <li><a href="#">Degree Programs</a></li>
+                <li><a href="#">Student & Faculty Portal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Researchers</h4>
+            <ul>
+                <li><a href="#">Research Faculty</a></li>
+                <li><a href="#">Laboratories</a></li>
+            </ul>
+
+            <h4>International Patients</h4>
+            <ul>
+                <li><a href="#">Appointments</a></li>
+                <li><a href="#">Financial Services</a></li>
+                <li><a href="#">International Locations & Offices</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Charitable Care & Financial Assistance</h4>
+            <ul>
+                <li><a href="#">Community Health Needs Assessment</a></li>
+                <li><a href="#">Financial Assistance Documents - Arizona</a></li>
+                <li><a href="#">Financial Assistance Documents - Florida</a></li>
+                <li><a href="#">Financial Assistance Documents - Minnesota</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="social-media">
+            <p>Follow Mayo Clinic</p>
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><img src="images/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/mayoclinic/?hl=en"><img src="images/insta.png" alt="Instagram"></a>
+            <a href="https://web.facebook.com/MayoClinic/?_rdc=1&_rdr"><img src="images/messen.png" alt="Messenger"></a>
+            <a href="https://x.com/MayoClinic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/twit.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/company/mayo-clinic/"><img src="images/linkdin.png" alt="linkdin"></a>
+        </div>
+        <div class="app-buttons">
+            <p>Get the Mayo Clinic app</p>
+            <a href="#"><img src="images/google play.png" alt="Google Play"></a>
+            <a href="#"><img src="images/app store.png" alt="App Store"></a>
+        </div>
+    </div>
+</footer>
+
+<!--Footer Ends-->
+
+
+    
+
+
+
+
+<script src="checkout.js"></script> <!-- Link to your JS -->
+</body>
+</html>
